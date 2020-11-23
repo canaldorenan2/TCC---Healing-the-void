@@ -1,0 +1,558 @@
+fileFormatVersion: 2
+guid: ddcb420d6fd3f5842ba20af8dd0aee5d
+timeCreated: 1474562250
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: ' 1'
+    100002: Cercle002
+    100004: Cercle003
+    100006: "Cha\xEEne CI001"
+    100008: "Cha\xEEne CI002"
+    100010: Factice001
+    100012: Factice002
+    100014: Factice003
+    100016: Factice004
+    100018: //RootNode
+    100020: HIPPOGRIFF_
+    100022: HIPPOGRIFF_ Footsteps
+    100024: HIPPOGRIFF_ Head
+    100026: HIPPOGRIFF_ HeadNub
+    100028: HIPPOGRIFF_ L Calf
+    100030: HIPPOGRIFF_ L Clavicle
+    100032: HIPPOGRIFF_ L Finger0
+    100034: HIPPOGRIFF_ L Finger01
+    100036: HIPPOGRIFF_ L Finger02
+    100038: HIPPOGRIFF_ L Finger0Nub
+    100040: HIPPOGRIFF_ L Finger1
+    100042: HIPPOGRIFF_ L Finger11
+    100044: HIPPOGRIFF_ L Finger12
+    100046: HIPPOGRIFF_ L Finger1Nub
+    100048: HIPPOGRIFF_ L Finger2
+    100050: HIPPOGRIFF_ L Finger21
+    100052: HIPPOGRIFF_ L Finger22
+    100054: HIPPOGRIFF_ L Finger2Nub
+    100056: HIPPOGRIFF_ L Finger3
+    100058: HIPPOGRIFF_ L Finger31
+    100060: HIPPOGRIFF_ L Finger32
+    100062: HIPPOGRIFF_ L Finger3Nub
+    100064: HIPPOGRIFF_ L Foot
+    100066: HIPPOGRIFF_ L Forearm
+    100068: HIPPOGRIFF_ L Hand
+    100070: HIPPOGRIFF_ L HorseLink
+    100072: HIPPOGRIFF_ L Thigh
+    100074: HIPPOGRIFF_ L Toe0
+    100076: HIPPOGRIFF_ L Toe0Nub
+    100078: HIPPOGRIFF_ L UpperArm
+    100080: HIPPOGRIFF_ Neck
+    100082: HIPPOGRIFF_ Neck1
+    100084: HIPPOGRIFF_ Neck2
+    100086: HIPPOGRIFF_ Neck3
+    100088: HIPPOGRIFF_ Pelvis
+    100090: HIPPOGRIFF_ Queue de cheval 1
+    100092: HIPPOGRIFF_ Queue de cheval 1Nub
+    100094: HIPPOGRIFF_ R Calf
+    100096: HIPPOGRIFF_ R Clavicle
+    100098: HIPPOGRIFF_ R Finger0
+    100100: HIPPOGRIFF_ R Finger01
+    100102: HIPPOGRIFF_ R Finger02
+    100104: HIPPOGRIFF_ R Finger0Nub
+    100106: HIPPOGRIFF_ R Finger1
+    100108: HIPPOGRIFF_ R Finger11
+    100110: HIPPOGRIFF_ R Finger12
+    100112: HIPPOGRIFF_ R Finger1Nub
+    100114: HIPPOGRIFF_ R Finger2
+    100116: HIPPOGRIFF_ R Finger21
+    100118: HIPPOGRIFF_ R Finger22
+    100120: HIPPOGRIFF_ R Finger2Nub
+    100122: HIPPOGRIFF_ R Finger3
+    100124: HIPPOGRIFF_ R Finger31
+    100126: HIPPOGRIFF_ R Finger32
+    100128: HIPPOGRIFF_ R Finger3Nub
+    100130: HIPPOGRIFF_ R Foot
+    100132: HIPPOGRIFF_ R Forearm
+    100134: HIPPOGRIFF_ R Hand
+    100136: HIPPOGRIFF_ R HorseLink
+    100138: HIPPOGRIFF_ R Thigh
+    100140: HIPPOGRIFF_ R Toe0
+    100142: HIPPOGRIFF_ R Toe0Nub
+    100144: HIPPOGRIFF_ R UpperArm
+    100146: HIPPOGRIFF_ Spine
+    100148: HIPPOGRIFF_ Spine1
+    100150: HIPPOGRIFF_ Tail
+    100152: HIPPOGRIFF_ Tail1
+    100154: HIPPOGRIFF_ Tail2
+    100156: HIPPOGRIFF_ Tail3
+    100158: HIPPOGRIFF_ Tail4
+    100160: HIPPOGRIFF_ TailNub
+    100162: HIPPOGRIFF_WING_L_1
+    100164: HIPPOGRIFF_WING_L_2
+    100166: HIPPOGRIFF_WING_L_3
+    100168: HIPPOGRIFF_WING_L_nub
+    100170: HIPPOGRIFF_WING_R_1
+    100172: HIPPOGRIFF_WING_R_2
+    100174: HIPPOGRIFF_WING_R_3
+    100176: HIPPOGRIFF_WING_R_nub
+    400000: ' 1'
+    400002: Cercle002
+    400004: Cercle003
+    400006: "Cha\xEEne CI001"
+    400008: "Cha\xEEne CI002"
+    400010: Factice001
+    400012: Factice002
+    400014: Factice003
+    400016: Factice004
+    400018: //RootNode
+    400020: HIPPOGRIFF_
+    400022: HIPPOGRIFF_ Footsteps
+    400024: HIPPOGRIFF_ Head
+    400026: HIPPOGRIFF_ HeadNub
+    400028: HIPPOGRIFF_ L Calf
+    400030: HIPPOGRIFF_ L Clavicle
+    400032: HIPPOGRIFF_ L Finger0
+    400034: HIPPOGRIFF_ L Finger01
+    400036: HIPPOGRIFF_ L Finger02
+    400038: HIPPOGRIFF_ L Finger0Nub
+    400040: HIPPOGRIFF_ L Finger1
+    400042: HIPPOGRIFF_ L Finger11
+    400044: HIPPOGRIFF_ L Finger12
+    400046: HIPPOGRIFF_ L Finger1Nub
+    400048: HIPPOGRIFF_ L Finger2
+    400050: HIPPOGRIFF_ L Finger21
+    400052: HIPPOGRIFF_ L Finger22
+    400054: HIPPOGRIFF_ L Finger2Nub
+    400056: HIPPOGRIFF_ L Finger3
+    400058: HIPPOGRIFF_ L Finger31
+    400060: HIPPOGRIFF_ L Finger32
+    400062: HIPPOGRIFF_ L Finger3Nub
+    400064: HIPPOGRIFF_ L Foot
+    400066: HIPPOGRIFF_ L Forearm
+    400068: HIPPOGRIFF_ L Hand
+    400070: HIPPOGRIFF_ L HorseLink
+    400072: HIPPOGRIFF_ L Thigh
+    400074: HIPPOGRIFF_ L Toe0
+    400076: HIPPOGRIFF_ L Toe0Nub
+    400078: HIPPOGRIFF_ L UpperArm
+    400080: HIPPOGRIFF_ Neck
+    400082: HIPPOGRIFF_ Neck1
+    400084: HIPPOGRIFF_ Neck2
+    400086: HIPPOGRIFF_ Neck3
+    400088: HIPPOGRIFF_ Pelvis
+    400090: HIPPOGRIFF_ Queue de cheval 1
+    400092: HIPPOGRIFF_ Queue de cheval 1Nub
+    400094: HIPPOGRIFF_ R Calf
+    400096: HIPPOGRIFF_ R Clavicle
+    400098: HIPPOGRIFF_ R Finger0
+    400100: HIPPOGRIFF_ R Finger01
+    400102: HIPPOGRIFF_ R Finger02
+    400104: HIPPOGRIFF_ R Finger0Nub
+    400106: HIPPOGRIFF_ R Finger1
+    400108: HIPPOGRIFF_ R Finger11
+    400110: HIPPOGRIFF_ R Finger12
+    400112: HIPPOGRIFF_ R Finger1Nub
+    400114: HIPPOGRIFF_ R Finger2
+    400116: HIPPOGRIFF_ R Finger21
+    400118: HIPPOGRIFF_ R Finger22
+    400120: HIPPOGRIFF_ R Finger2Nub
+    400122: HIPPOGRIFF_ R Finger3
+    400124: HIPPOGRIFF_ R Finger31
+    400126: HIPPOGRIFF_ R Finger32
+    400128: HIPPOGRIFF_ R Finger3Nub
+    400130: HIPPOGRIFF_ R Foot
+    400132: HIPPOGRIFF_ R Forearm
+    400134: HIPPOGRIFF_ R Hand
+    400136: HIPPOGRIFF_ R HorseLink
+    400138: HIPPOGRIFF_ R Thigh
+    400140: HIPPOGRIFF_ R Toe0
+    400142: HIPPOGRIFF_ R Toe0Nub
+    400144: HIPPOGRIFF_ R UpperArm
+    400146: HIPPOGRIFF_ Spine
+    400148: HIPPOGRIFF_ Spine1
+    400150: HIPPOGRIFF_ Tail
+    400152: HIPPOGRIFF_ Tail1
+    400154: HIPPOGRIFF_ Tail2
+    400156: HIPPOGRIFF_ Tail3
+    400158: HIPPOGRIFF_ Tail4
+    400160: HIPPOGRIFF_ TailNub
+    400162: HIPPOGRIFF_WING_L_1
+    400164: HIPPOGRIFF_WING_L_2
+    400166: HIPPOGRIFF_WING_L_3
+    400168: HIPPOGRIFF_WING_L_nub
+    400170: HIPPOGRIFF_WING_R_1
+    400172: HIPPOGRIFF_WING_R_2
+    400174: HIPPOGRIFF_WING_R_3
+    400176: HIPPOGRIFF_WING_R_nub
+    2300000: Cercle002
+    2300002: Cercle003
+    3300000: Cercle002
+    3300002: Cercle003
+    4300000: Cercle003
+    4300002: Cercle002
+    7400000: trot_RM
+    9500000: //RootNode
+    13700000: ' 1'
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: trot_RM
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ' 1'
+        weight: 1
+      - path: Factice003
+        weight: 1
+      - path: "Factice003/Cha\xEEne CI002"
+        weight: 1
+      - path: Factice004
+        weight: 1
+      - path: "Factice004/Cha\xEEne CI001"
+        weight: 1
+      - path: HIPPOGRIFF_
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Footsteps
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ L Thigh
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ L Thigh/HIPPOGRIFF_ L Calf
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ L Thigh/HIPPOGRIFF_ L Calf/HIPPOGRIFF_
+          L HorseLink
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ L Thigh/HIPPOGRIFF_ L Calf/HIPPOGRIFF_
+          L HorseLink/HIPPOGRIFF_ L Foot
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ L Thigh/HIPPOGRIFF_ L Calf/HIPPOGRIFF_
+          L HorseLink/HIPPOGRIFF_ L Foot/HIPPOGRIFF_ L Toe0
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ L Thigh/HIPPOGRIFF_ L Calf/HIPPOGRIFF_
+          L HorseLink/HIPPOGRIFF_ L Foot/HIPPOGRIFF_ L Toe0/HIPPOGRIFF_ L Toe0Nub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ R Thigh
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ R Thigh/HIPPOGRIFF_ R Calf
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ R Thigh/HIPPOGRIFF_ R Calf/HIPPOGRIFF_
+          R HorseLink
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ R Thigh/HIPPOGRIFF_ R Calf/HIPPOGRIFF_
+          R HorseLink/HIPPOGRIFF_ R Foot
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ R Thigh/HIPPOGRIFF_ R Calf/HIPPOGRIFF_
+          R HorseLink/HIPPOGRIFF_ R Foot/HIPPOGRIFF_ R Toe0
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ R Thigh/HIPPOGRIFF_ R Calf/HIPPOGRIFF_
+          R HorseLink/HIPPOGRIFF_ R Foot/HIPPOGRIFF_ R Toe0/HIPPOGRIFF_ R Toe0Nub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/Cercle002
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/Cercle003
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/Factice001
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/Factice001/HIPPOGRIFF_WING_L_1
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/Factice001/HIPPOGRIFF_WING_L_1/HIPPOGRIFF_WING_L_2
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/Factice001/HIPPOGRIFF_WING_L_1/HIPPOGRIFF_WING_L_2/HIPPOGRIFF_WING_L_3
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/Factice001/HIPPOGRIFF_WING_L_1/HIPPOGRIFF_WING_L_2/HIPPOGRIFF_WING_L_3/HIPPOGRIFF_WING_L_nub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/Factice002
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/Factice002/HIPPOGRIFF_WING_R_1
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/Factice002/HIPPOGRIFF_WING_R_1/HIPPOGRIFF_WING_R_2
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/Factice002/HIPPOGRIFF_WING_R_1/HIPPOGRIFF_WING_R_2/HIPPOGRIFF_WING_R_3
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/Factice002/HIPPOGRIFF_WING_R_1/HIPPOGRIFF_WING_R_2/HIPPOGRIFF_WING_R_3/HIPPOGRIFF_WING_R_nub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger0
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger0/HIPPOGRIFF_ L Finger01
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger0/HIPPOGRIFF_ L Finger01/HIPPOGRIFF_ L Finger02
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger0/HIPPOGRIFF_ L Finger01/HIPPOGRIFF_ L Finger02/HIPPOGRIFF_ L Finger0Nub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger1
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger1/HIPPOGRIFF_ L Finger11
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger1/HIPPOGRIFF_ L Finger11/HIPPOGRIFF_ L Finger12
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger1/HIPPOGRIFF_ L Finger11/HIPPOGRIFF_ L Finger12/HIPPOGRIFF_ L Finger1Nub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger2
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger2/HIPPOGRIFF_ L Finger21
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger2/HIPPOGRIFF_ L Finger21/HIPPOGRIFF_ L Finger22
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger2/HIPPOGRIFF_ L Finger21/HIPPOGRIFF_ L Finger22/HIPPOGRIFF_ L Finger2Nub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger3
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger3/HIPPOGRIFF_ L Finger31
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger3/HIPPOGRIFF_ L Finger31/HIPPOGRIFF_ L Finger32
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          L Clavicle/HIPPOGRIFF_ L UpperArm/HIPPOGRIFF_ L Forearm/HIPPOGRIFF_ L Hand/HIPPOGRIFF_
+          L Finger3/HIPPOGRIFF_ L Finger31/HIPPOGRIFF_ L Finger32/HIPPOGRIFF_ L Finger3Nub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          Neck
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          Neck/HIPPOGRIFF_ Neck1
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          Neck/HIPPOGRIFF_ Neck1/HIPPOGRIFF_ Neck2
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          Neck/HIPPOGRIFF_ Neck1/HIPPOGRIFF_ Neck2/HIPPOGRIFF_ Neck3
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          Neck/HIPPOGRIFF_ Neck1/HIPPOGRIFF_ Neck2/HIPPOGRIFF_ Neck3/HIPPOGRIFF_ Head
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          Neck/HIPPOGRIFF_ Neck1/HIPPOGRIFF_ Neck2/HIPPOGRIFF_ Neck3/HIPPOGRIFF_ Head/HIPPOGRIFF_
+          HeadNub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          Neck/HIPPOGRIFF_ Neck1/HIPPOGRIFF_ Neck2/HIPPOGRIFF_ Neck3/HIPPOGRIFF_ Head/HIPPOGRIFF_
+          Queue de cheval 1
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          Neck/HIPPOGRIFF_ Neck1/HIPPOGRIFF_ Neck2/HIPPOGRIFF_ Neck3/HIPPOGRIFF_ Head/HIPPOGRIFF_
+          Queue de cheval 1/HIPPOGRIFF_ Queue de cheval 1Nub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger0
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger0/HIPPOGRIFF_ R Finger01
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger0/HIPPOGRIFF_ R Finger01/HIPPOGRIFF_ R Finger02
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger0/HIPPOGRIFF_ R Finger01/HIPPOGRIFF_ R Finger02/HIPPOGRIFF_ R Finger0Nub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger1
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger1/HIPPOGRIFF_ R Finger11
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger1/HIPPOGRIFF_ R Finger11/HIPPOGRIFF_ R Finger12
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger1/HIPPOGRIFF_ R Finger11/HIPPOGRIFF_ R Finger12/HIPPOGRIFF_ R Finger1Nub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger2
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger2/HIPPOGRIFF_ R Finger21
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger2/HIPPOGRIFF_ R Finger21/HIPPOGRIFF_ R Finger22
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger2/HIPPOGRIFF_ R Finger21/HIPPOGRIFF_ R Finger22/HIPPOGRIFF_ R Finger2Nub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger3
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger3/HIPPOGRIFF_ R Finger31
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger3/HIPPOGRIFF_ R Finger31/HIPPOGRIFF_ R Finger32
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Spine1/HIPPOGRIFF_
+          R Clavicle/HIPPOGRIFF_ R UpperArm/HIPPOGRIFF_ R Forearm/HIPPOGRIFF_ R Hand/HIPPOGRIFF_
+          R Finger3/HIPPOGRIFF_ R Finger31/HIPPOGRIFF_ R Finger32/HIPPOGRIFF_ R Finger3Nub
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Tail
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Tail/HIPPOGRIFF_
+          Tail1
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Tail/HIPPOGRIFF_
+          Tail1/HIPPOGRIFF_ Tail2
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Tail/HIPPOGRIFF_
+          Tail1/HIPPOGRIFF_ Tail2/HIPPOGRIFF_ Tail3
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Tail/HIPPOGRIFF_
+          Tail1/HIPPOGRIFF_ Tail2/HIPPOGRIFF_ Tail3/HIPPOGRIFF_ Tail4
+        weight: 1
+      - path: HIPPOGRIFF_/HIPPOGRIFF_ Pelvis/HIPPOGRIFF_ Spine/HIPPOGRIFF_ Tail/HIPPOGRIFF_
+          Tail1/HIPPOGRIFF_ Tail2/HIPPOGRIFF_ Tail3/HIPPOGRIFF_ Tail4/HIPPOGRIFF_
+          TailNub
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: HIPPOGRIFF_
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e658b8f0a3cd4da499e6fc2e0db9f5f1,
+    type: 3}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
