@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.psd filter=lfs diff=lfs merge=lfs -text
+*/67657f212124a42d86057c3e42d765e4 filter=lfs diff=lfs merge=lfs -text
+67657f212124a42d86057c3e42d765e4 filter=lfs diff=lfs merge=lfs -text
