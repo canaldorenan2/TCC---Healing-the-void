@@ -64,10 +64,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FireAndIceDragons\scripts\FlamesToggle.cs" />
+    <Compile Include="Assets\FireAndIceDragons\scripts\SmoothCameraOrbit.cs" />
+    <Compile Include="Assets\FireAndIceDragons\scripts\toggle.cs" />
+    <Compile Include="Assets\Rocks and Boulders 2\Shaders\RotateGameObject.cs" />
+    <Compile Include="Assets\Scripts\FlyJump.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Rock.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonMovement.cs" />
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
+    <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM2.shader" />
+    <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM3.shader" />
+    <None Include="Assets\Rocks and Boulders 2\Shaders\shader info.txt" />
     <None Include="Assets\SkyBox\Hdri setup.txt" />
+    <None Include="Assets\FireAndIceDragons\README.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -602,6 +612,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/canal/Documents/GitHub/TCC---Healing-the-void/Dev/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/canal/Documents/GitHub/TCC---Healing-the-void/Dev/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/canal/Documents/GitHub/TCC---Healing-the-void/Dev/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -620,17 +633,14 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/canal/Documents/GitHub/TCC---Healing-the-void/Dev/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/canal/Documents/GitHub/TCC---Healing-the-void/Dev/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/canal/Documents/GitHub/TCC---Healing-the-void/Dev/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/canal/Documents/GitHub/TCC---Healing-the-void/Dev/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>C:/Users/canal/Documents/GitHub/TCC---Healing-the-void/Dev/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/Users/canal/Documents/GitHub/TCC---Healing-the-void/Dev/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
