@@ -7,31 +7,26 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public CharacterController characterController;
 
-    public float speed = 6;
-
-    float horizontal, vertical, targetAngle, anguloFilho;
+    public Animator animator;
 
     public Transform camera;
 
+    public GameObject playerObject;
+
     Vector3 moveDirection;
 
-    Vector3 direction, gravidade;
+    Vector3 direction;
 
-    public Animator animator;
+    public float velocidadeAceleracao, timer1, timer2, timer3;
 
-    Transform pai, filho;
+    public float speed = 6;
+
+    float horizontal, vertical, targetAngle;
 
     public bool runAux, jump, colidindoTerreno, flyJump, primeiraRodada, ataque1;
 
-    public GameObject playerObject;
-
-    public float velocidadeAceleracao, timer1, timer2;
-
-
     private void Start()
     {
-        pai = gameObject.transform;
-        filho = gameObject.transform.GetChild(0);
         characterController = GetComponent<CharacterController>();
         velocidadeAceleracao = -10.0f;
         colidindoTerreno = false;
@@ -76,9 +71,6 @@ public class ThirdPersonMovement : MonoBehaviour
             // Aplica a rotação 
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
-            // Guarda o valor para resetar a animação no lugar correto
-            anguloFilho = targetAngle;
-
             // Converte a rotação em direção
             moveDirection = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
 
@@ -92,8 +84,6 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             ControlaAtaque1();
         }
-
-
     }
 
     void ControlaAtaque1()
@@ -104,29 +94,39 @@ public class ThirdPersonMovement : MonoBehaviour
         }
         else
         {
-            if (timer1 > 0)
+            if (timer2 == 0)
             {
                 animator.SetBool("slash1", false);
+                ataque1 = false;
                 timer1 = 0;
             }
 
-
-            if (timer2 > 0 && timer2 < 0.8)
+            if (timer2 > 0 && timer2 < 0.8f)
             {
                 timer2 += Time.deltaTime;
             }
             else
             {
-                animator.SetBool("slash1Continuos", false);
-                ataque1 = false;
-                timer2 = 0;
+                if (timer3 > 0 && timer3 < 0.8f)
+                {
+                    timer3 += Time.deltaTime;
+                }
+                else
+                {
+                    animator.SetBool("slash1", false);
+                    animator.SetBool("slash1Continuos", false);
+                    ataque1 = false;
+                    timer1 = 0;
+                    timer2 = 0;
+                    timer3 = 0;
+                    animator.SetBool("slash1End", false);
+                }
             }
         }
     }
 
     void ControleAnimacao()
     {
-
 
         // Controla a animação de correr
         if (direction.magnitude > 0.1f)
@@ -139,7 +139,7 @@ public class ThirdPersonMovement : MonoBehaviour
             if (runAux == true)
             {
                 animator.SetBool("run", false);
-                filho.Rotate(0, 0, 0);
+                // .Rotate(0, 0, 0);
                 runAux = false;
             }
         }
@@ -147,14 +147,11 @@ public class ThirdPersonMovement : MonoBehaviour
         // Controla o pulo
         if (Input.GetKeyDown("space"))
         {
-
             jump = true;
             velocidadeAceleracao = 10f;
             Vector3 pulo = new Vector3(0, velocidadeAceleracao * Time.deltaTime, 0);
             characterController.Move(pulo);
             animator.SetBool("jump", true);
-
-
         }
 
         // controla a queda
@@ -171,35 +168,33 @@ public class ThirdPersonMovement : MonoBehaviour
         }
 
         // Controla o ataque 1
-
         if (Input.GetMouseButtonDown(0))
         {
-            if (!animator.GetBool("slash1"))
+            if (!animator.GetBool("slash1") && characterController.isGrounded)
             {
                 animator.SetBool("slash1", true);
-                timer1 = 0;
+                timer1 = 0.02f;
                 ataque1 = true;
             }
 
-            if (animator.GetBool("slash1") && !animator.GetBool("slash1Continuos") && timer1 > 0.1f)
+            if (!animator.GetBool("slash1Continuos") && timer1 > 0.1f)
             {
                 animator.SetBool("slash1Continuos", true);
                 timer2 = 0.02f;
-                animator.SetBool("slash1", false);
+
             }
 
-            if (animator.GetBool("slash1") && animator.GetBool("slash1Continuos") && timer2 > 0.2f)
+            if (!animator.GetBool("slash1End") && timer2 > 0.1f)
             {
                 animator.SetBool("slash1End", true);
-                animator.SetBool("slash1", false);
                 animator.SetBool("slash1Continuos", false);
-                timer1 = 10;
-                timer2 = 10;
+                animator.SetBool("slash1", false);
+                timer1 = 1;
+                timer2 = 1;
+                timer3 = 0.02f;
             }
 
-
         }
-
 
         if (!Input.anyKey)
         {
@@ -207,36 +202,5 @@ public class ThirdPersonMovement : MonoBehaviour
         }
 
     }
-
-    float Acelera(float velocidadeDeAceleracao)
-    {
-        velocidadeDeAceleracao = velocidadeDeAceleracao - 0.1f;
-
-        if (velocidadeDeAceleracao >= 0.0f)
-        {
-            velocidadeDeAceleracao = velocidadeDeAceleracao - 0.1f;
-        }
-        else
-        {
-            velocidadeDeAceleracao = velocidadeDeAceleracao - 0.2f;
-        }
-
-        return velocidadeDeAceleracao;
-    }
-
-    /*
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Terrain")
-        {
-            colidindoTerreno = true;
-            velocidadeAceleracao = 1;
-            if (jump)
-            {
-                jump = false;
-                velocidadeAceleracao = 11.1f;
-            }
-        }
-    }
-    */
 }
+

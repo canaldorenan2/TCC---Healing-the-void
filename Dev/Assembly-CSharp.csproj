@@ -68,9 +68,13 @@
     <Compile Include="Assets\FireAndIceDragons\scripts\SmoothCameraOrbit.cs" />
     <Compile Include="Assets\FireAndIceDragons\scripts\toggle.cs" />
     <Compile Include="Assets\Rocks and Boulders 2\Shaders\RotateGameObject.cs" />
+    <Compile Include="Assets\Scripts\CausaDano.cs" />
+    <Compile Include="Assets\Scripts\Dragao.cs" />
     <Compile Include="Assets\Scripts\FlyJump.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Rock.cs" />
+    <Compile Include="Assets\Scripts\RockFlying.cs" />
+    <Compile Include="Assets\Scripts\SofreDano.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonMovement.cs" />
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
     <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM2.shader" />
