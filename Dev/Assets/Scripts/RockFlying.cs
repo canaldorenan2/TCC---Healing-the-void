@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class RockFlying : MonoBehaviour
 {
-    public Transform rockGenerated;
+    //public Transform rockGenerated;
+    public GameObject rockGenerated;
 
     public float time, velocidade;
 
@@ -16,20 +17,21 @@ public class RockFlying : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (time > 5)
         {
             
-            Instantiate(rockGenerated);
-            rockGenerated.Translate(0,0,0);
+            Instantiate(rockGenerated, this.gameObject.transform);
+            //rockGenerated.Translate(0,0,0);
             time = 0;
         }
         else
         
         {
             time = time + Time.deltaTime;
-            velocidade = velocidade - 0.15f;
-            Vector3 position = new Vector3(0, velocidade * Time.deltaTime, 0);
-            rockGenerated.Translate(position);
+            //velocidade = velocidade - 0.15f;
+            //Vector3 position = new Vector3(0, velocidade * Time.deltaTime, 0);
+            //rockGenerated.Translate(position);
         }
     }
 }
