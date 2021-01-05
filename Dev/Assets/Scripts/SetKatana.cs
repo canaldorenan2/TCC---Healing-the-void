@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class SetKatana : MonoBehaviour
 {
     public Text text;
-
+    //public AudioClip flauta;
+    public AudioSource flauta1;
 
     // Start is called before the first frame update
     void Start()
@@ -22,15 +23,27 @@ public class SetKatana : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
         if (other.tag == "Player")
         {
             text.gameObject.SetActive(true);
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                
-                Destroy(this.gameObject);
+                flauta1.Play();
+                this.gameObject.transform.Translate(0, -10, 0);
+                //this.gameObject.SetActive(false);
+                //Destroy(this.gameObject);
             }
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        text.gameObject.SetActive(false);
     }
 }

@@ -69,6 +69,7 @@
     <Compile Include="Assets\FireAndIceDragons\scripts\toggle.cs" />
     <Compile Include="Assets\Rocks and Boulders 2\Shaders\RotateGameObject.cs" />
     <Compile Include="Assets\Scripts\CausaDano.cs" />
+    <Compile Include="Assets\Scripts\Dano.cs" />
     <Compile Include="Assets\Scripts\Dragao.cs" />
     <Compile Include="Assets\Scripts\DragaoAux.cs" />
     <Compile Include="Assets\Scripts\FlyJump.cs" />
@@ -76,9 +77,10 @@
     <Compile Include="Assets\Scripts\Rock.cs" />
     <Compile Include="Assets\Scripts\RockDestroy.cs" />
     <Compile Include="Assets\Scripts\RockFlying.cs" />
+    <Compile Include="Assets\Scripts\SetKatana.cs" />
     <Compile Include="Assets\Scripts\SofreDano.cs" />
+    <Compile Include="Assets\Scripts\StatusBase.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonMovement.cs" />
-    <Compile Include="Assets\SetKatana.cs" />
     <None Include="Assets\20 Logos PSD\Fonts\chunkfiveex\SIL Open Font License 1.1.txt" />
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
     <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM2.shader" />
