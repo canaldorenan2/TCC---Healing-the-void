@@ -6,10 +6,12 @@ public class SofreDano : MonoBehaviour
 {
 
 
-    // Update is called once per frame
-    void Update()
+    public int CausaDano(int danoAtacante, int vidaAtacado, int resistenciaAtacado)
     {
-        
+        int novaVida;
+        novaVida = vidaAtacado - (resistenciaAtacado - danoAtacante);
+
+        return novaVida;
     }
 
 

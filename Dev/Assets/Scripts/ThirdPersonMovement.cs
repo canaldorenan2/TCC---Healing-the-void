@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
@@ -17,13 +18,21 @@ public class ThirdPersonMovement : MonoBehaviour
 
     Vector3 direction;
 
-    public float velocidadeAceleracao, timer1, timer2, timer3;
+    public float velocidadeAceleracao, timer1, timer2, timer3, contadorRegen, tempoParaRegen;
 
-    public float speed = 6;
+    public float speed = 18;
+
+    public int vida = 100;
+
+    public int dano = 10;
+    public int resistencia = 10;
+    public int lifeRegen = 1;
 
     float horizontal, vertical, targetAngle;
 
-    public bool runAux, jump, colidindoTerreno, flyJump, primeiraRodada, ataque1;
+    public bool runAux, jump, colidindoTerreno, flyJump, primeiraRodada, ataque1, ataque2, atacando;
+
+    public GameObject katana;
 
     private void Start()
     {
@@ -33,11 +42,34 @@ public class ThirdPersonMovement : MonoBehaviour
         flyJump = false;
         jump = true;
         ataque1 = false;
+        speed = 18;
+        vida = 80;
+        
+
+
+
+        if (SceneManager.GetActiveScene().name == "Level 1")
+        {
+            katana.SetActive(false);
+            tempoParaRegen = 10;
+
+        }
+
+        contadorRegen = tempoParaRegen;
+        
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        // Regeneração de Vida
+        {
+            if (Time.fixedTime > contadorRegen)
+            {
+                vida += lifeRegen;
+                contadorRegen = Time.fixedTime + tempoParaRegen;
+            }
+        }
 
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
@@ -83,6 +115,11 @@ public class ThirdPersonMovement : MonoBehaviour
         if (ataque1)
         {
             ControlaAtaque1();
+        }
+
+        if (vida > 101)
+        {
+            vida = 100;
         }
     }
 

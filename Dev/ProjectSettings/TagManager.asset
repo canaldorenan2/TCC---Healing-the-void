@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Terrain
   - Dragon
+  - Fire
+  - Water
+  - Earth
+  - Air
+  - Leaf
   layers:
   - Default
   - TransparentFX

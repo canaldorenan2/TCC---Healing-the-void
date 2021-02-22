@@ -8,22 +8,23 @@ public class SetKatana : MonoBehaviour
     public Text text;
     //public AudioClip flauta;
     public AudioSource flauta1;
+    public ThirdPersonMovement scriptPlayer;
+
+    bool katanaAdquirida;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        katanaAdquirida = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-
+        if (katanaAdquirida)
+        {
+            scriptPlayer.katana.SetActive(true);
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -36,6 +37,7 @@ public class SetKatana : MonoBehaviour
             {
                 flauta1.Play();
                 this.gameObject.transform.Translate(0, -10, 0);
+                katanaAdquirida = true;
                 //this.gameObject.SetActive(false);
                 //Destroy(this.gameObject);
             }
