@@ -165,13 +165,22 @@ MonoBehaviour:
   timer1: 0
   timer2: 0
   timer3: 0
-  speed: 30
+  contadorRegen: 0
+  tempoParaRegen: 0
+  speed: 18
+  vida: 100
+  dano: 10
+  resistencia: 10
+  lifeRegen: 1
   runAux: 0
   jump: 0
   colidindoTerreno: 0
   flyJump: 0
   primeiraRodada: 0
   ataque1: 0
+  ataque2: 0
+  atacando: 0
+  katana: {fileID: 160596690382932672}
 --- !u!65 &396752672236146976
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2532,6 +2541,12 @@ Transform:
 --- !u!95 &8150214331384895575 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8402288315829716567, guid: 3963d8db08170db4a9c42e18d765da7e,
+    type: 3}
+  m_PrefabInstance: {fileID: 396752672231562752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &160596690382932672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 557040777535706304, guid: 3963d8db08170db4a9c42e18d765da7e,
     type: 3}
   m_PrefabInstance: {fileID: 396752672231562752}
   m_PrefabAsset: {fileID: 0}

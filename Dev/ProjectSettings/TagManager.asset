@@ -11,6 +11,7 @@ TagManager:
   - Earth
   - Air
   - Leaf
+  - SamuraiInimigo
   layers:
   - Default
   - TransparentFX

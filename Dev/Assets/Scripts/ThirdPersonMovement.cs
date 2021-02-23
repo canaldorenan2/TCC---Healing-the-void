@@ -42,7 +42,7 @@ public class ThirdPersonMovement : MonoBehaviour
         flyJump = false;
         jump = true;
         ataque1 = false;
-        speed = 18;
+        speed = 10;
         vida = 80;
         
 

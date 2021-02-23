@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Dragao : MonoBehaviour
 {
-    public int vida = 10;
+    public int vida = 100;
 
     private NavMeshAgent navMeshAgent;
 
@@ -15,7 +15,9 @@ public class Dragao : MonoBehaviour
 
     public int controlaDestino;
 
-    public bool playerAtacavel, localDaTreta, setadoLocalDaTreta;
+    public bool playerAtacavel, localDaTreta, setadoLocalDaTreta, vivo;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,7 @@ public class Dragao : MonoBehaviour
 
         playerAtacavel = false;
         localDaTreta = false;
+        vivo = true;
 
         //referencia = transform.Find("Referencia").GetComponent<Transform>();
     }
@@ -74,7 +77,10 @@ public class Dragao : MonoBehaviour
             }
         }
 
-
+        if (vida > 1)
+        {
+            vivo = false;
+        }
 
     }
 
