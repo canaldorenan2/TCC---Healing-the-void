@@ -2878,6 +2878,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8617421494784188792}
   - component: {fileID: 2411422401034238722}
+  - component: {fileID: 984303565}
+  - component: {fileID: 984303566}
+  - component: {fileID: 984303568}
   m_Layer: 0
   m_Name: HellKnight
   m_TagString: Untagged
@@ -2894,7 +2897,7 @@ Transform:
   m_GameObject: {fileID: 8997325218860841922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children:
   - {fileID: 4490327733301952717}
   - {fileID: 1202582554161557368}
@@ -2921,6 +2924,61 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &984303565
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8997325218860841922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.09
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!195 &984303566
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8997325218860841922}
+  m_Enabled: 1
+  m_AgentTypeID: -1372625422
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &984303568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8997325218860841922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5f0f815151843249ba9462d11d1abf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vulneravel: 0
+  temAlvo: 0
+  sliderVida: {fileID: 0}
+  vida: 0
+  navMeshAgent: {fileID: 984303566}
+  player: {fileID: 0}
+  arena: {fileID: 0}
+  animator: {fileID: 2411422401034238722}
 --- !u!1 &9055193613897144365
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: e658b8f0a3cd4da499e6fc2e0db9f5f1
+guid: 2e4e948c7bd097a4f94c80892fb10908
 ModelImporter:
-  serializedVersion: 19300
+  serializedVersion: 19301
   internalIDToNameTable:
   - first:
       1: 100000
@@ -434,12 +434,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: HIPPOGRIFF HAIR
-    second: {fileID: 2100000, guid: d0a1349633dde1d4e9fac4db5c9eec8c, type: 2}
+    second: {fileID: 2100000, guid: 6ea1a0c5571737249a8cf5ea23f89ec9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: HIPPOGRIFF_BODY
-    second: {fileID: 2100000, guid: ca97cd8d9f2bac24884924ba7ea3a5fd, type: 2}
+    second: {fileID: 2100000, guid: 809b9427640440d4c93152a5eb671c79, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -479,6 +479,7 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -504,27 +505,27 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips:
-  - 43f607ab191fe64418a14f771ba301f3
-  - 3979f5616c7cd6f44ad693c943e10d78
-  - 1811dfed05a5c8d43901eed5854a1156
-  - d62f1f268a0c4f54aa7b5a21499160fd
-  - b438b450ba0e06547bc3e8a9776302b7
-  - a6af1c5fe75e94f4db06e0784e0d6163
-  - cdd408d7e1227ae42a4a57ac558f3171
-  - 2d091bdb06df35646badc09d4f4cf6d9
-  - 7bae102034c0160459b59e7afcc846d2
-  - 54fae1be3e20f5b48a2bc8ca36eb5364
-  - 09071fe3153f1c745806311582da679f
-  - 0c3ee63ba444fec49bac29c5a302a137
-  - 06154e0c575ee4042a376addbfb674c6
-  - 303799ab420560347ac208303d9fed18
-  - 4bbe6968e320a0a4084576b772746849
-  - be8dca7b4745c16458a6a919218ac4d3
-  - 24876486ff5118942ae4bc401df9cbd0
-  - f44f05dbcbcf715449860a47808b315d
-  - ddcb420d6fd3f5842ba20af8dd0aee5d
-  - a78d224ce1cea61438936cdcbc7e01bc
-  - a039f280ae9c66f46af0d1b4e160005f
+  - f6adcb173bfca0d44b243e85ada8fc05
+  - 1fa87a338b3370a4fa49efd964554ceb
+  - a6de2cab01ac7bd499b70eb5ee4b2bf5
+  - b03c07c281cc7864289c94e14838d2c9
+  - 9e6da22462ff03c499726601d709281b
+  - fe8640836bd93e240942462dea012372
+  - 8f6f72d3351c99f4c8c41660ea308e39
+  - 5928a941ea321434fbd8f459ae984201
+  - 1b1226ce6805f0245bfc5e45a6036def
+  - c6a2423d4f3b4324f9cdd50af7a83cf9
+  - 86ea7b3a802fbe44abca32c4d02ef3d3
+  - d3600c7cea305d04fa2aa1c432220123
+  - f4991ec89e0d5374bb7350210ffb12f7
+  - 02c6c27ac3cf7f4498908a5073bb0eac
+  - 7fc3fa1a6596ce644a00ce4069d53222
+  - 2672cb243ee5def49852a5e48628bb73
+  - c72ee81ae707ba34080f345c4dd86f2d
+  - fe3df159cf344ca4496b28edca7966ea
+  - 2359893b9d87e8041a782c44bc83f380
+  - 6a08fb88bebe2c348acbe7cb428bd634
+  - bbe975902aa746346ba22b21cb4ef0bd
   importAnimation: 1
   humanDescription:
     serializedVersion: 3

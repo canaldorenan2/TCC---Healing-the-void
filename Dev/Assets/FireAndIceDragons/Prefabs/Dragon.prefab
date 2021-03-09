@@ -10304,9 +10304,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4771766637037324}
   - component: {fileID: 137284472329234782}
+  - component: {fileID: 1139363485}
   m_Layer: 0
   m_Name: DrogonEye
-  m_TagString: Untagged
+  m_TagString: Dragon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10376,6 +10377,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: -0.3759315, z: 0.2748978}
     m_Extent: {x: 0.024327058, y: 0.011308864, z: 0.008126929}
   m_DirtyAABB: 0
+--- !u!65 &1139363485
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148398910062882}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.061852347, y: 0.14669865, z: 0.08222663}
+  m_Center: {x: -0.00001117324, y: -0.36076647, z: 0.26269674}
 --- !u!1 &1150073832227696
 GameObject:
   m_ObjectHideFlags: 0
@@ -11246,7 +11260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4011419139869460
 Transform:
   m_ObjectHideFlags: 0
@@ -11539,9 +11553,11 @@ GameObject:
   - component: {fileID: 95308917667046896}
   - component: {fileID: 54201639741362656}
   - component: {fileID: 136424841857378486}
+  - component: {fileID: 1412054376}
+  - component: {fileID: 1412054379}
   m_Layer: 0
-  m_Name: DragonDefaultPose1
-  m_TagString: Player
+  m_Name: Dragon
+  m_TagString: Dragon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11553,9 +11569,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444722637519832}
-  m_LocalRotation: {x: -0, y: -0.90950304, z: -0, w: 0.41569737}
+  m_LocalRotation: {x: 0, y: -0.9095048, z: 0, w: 0.41569352}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.04, y: 2.03, z: 2.0599997}
   m_Children:
   - {fileID: 4908941011732228}
   - {fileID: 4666334682024490}
@@ -11608,11 +11624,53 @@ CapsuleCollider:
   m_GameObject: {fileID: 1444722637519832}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.3
   m_Height: 1.6
   m_Direction: 1
   m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!195 &1412054376
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444722637519832}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 10
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1412054379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444722637519832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab3840a4228e7141b233bf40a391343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 10
+  animator: {fileID: 95308917667046896}
+  referencia: {fileID: 0}
+  controlaDestino: 0
+  playerAtacavel: 0
+  localDaTreta: 0
+  setadoLocalDaTreta: 0
+  vivo: 0
 --- !u!1 &1467345350213966
 GameObject:
   m_ObjectHideFlags: 0
@@ -11868,7 +11926,7 @@ GameObject:
   - component: {fileID: 4666334682024490}
   m_Layer: 0
   m_Name: Dragon 1
-  m_TagString: Untagged
+  m_TagString: Dragon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16749,7 +16807,7 @@ GameObject:
   - component: {fileID: 137731806436881662}
   m_Layer: 0
   m_Name: Dragon
-  m_TagString: Untagged
+  m_TagString: Dragon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

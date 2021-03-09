@@ -64,10 +64,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Prefab\Rocks and Boulders 2\Shaders\RotateGameObject.cs" />
+    <Compile Include="Assets\FireAndIceDragons\scripts\FlamesToggle.cs" />
+    <Compile Include="Assets\FireAndIceDragons\scripts\SmoothCameraOrbit.cs" />
+    <Compile Include="Assets\FireAndIceDragons\scripts\toggle.cs" />
+    <Compile Include="Assets\Rocks and Boulders 2\Shaders\RotateGameObject.cs" />
     <Compile Include="Assets\Scripts\BarraDeVida.cs" />
+    <Compile Include="Assets\Scripts\BossArena.cs" />
     <Compile Include="Assets\Scripts\CausaDano.cs" />
     <Compile Include="Assets\Scripts\Coletaveis.cs" />
+    <Compile Include="Assets\Scripts\Colossus.cs" />
     <Compile Include="Assets\Scripts\Dano.cs" />
     <Compile Include="Assets\Scripts\Dragao.cs" />
     <Compile Include="Assets\Scripts\DragaoAux.cs" />
@@ -87,17 +92,19 @@
     <Compile Include="Assets\Scripts\bossset.cs" />
     <None Include="Assets\20 Logos PSD\Fonts\chunkfiveex\SIL Open Font License 1.1.txt" />
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
-    <None Include="Assets\Prefab\Rocks and Boulders 2\Shaders\Blend SM2.shader" />
+    <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM2.shader" />
     <None Include="Assets\Prefab\Flames Of The Phoenix\READ_ME.txt" />
-    <None Include="Assets\Prefab\Rocks and Boulders 2\Shaders\Blend SM3.shader" />
+    <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM3.shader" />
     <None Include="Assets\Prefab\Knight\Shaders\Diffuse2Sided.shader" />
-    <None Include="Assets\Prefab\Rocks and Boulders 2\Shaders\shader info.txt" />
+    <None Include="Assets\Rocks and Boulders 2\Shaders\shader info.txt" />
     <None Include="Assets\20 Logos PSD\Fonts\kaushanscript\SIL Open Font License.txt" />
     <None Include="Assets\20 Logos PSD\Fonts\peacesans\FREE FONT LICENSE.txt" />
     <None Include="Assets\20 Logos PSD\Fonts\foo\molot\molot-eula.txt" />
     <None Include="Assets\20 Logos PSD\Fonts\Read Me.txt" />
+    <None Include="Assets\Flames Of The Phoenix\READ_ME.txt" />
     <None Include="Assets\SkyBox\Hdri setup.txt" />
     <None Include="Assets\20 Logos PSD\Fonts\firasansheavy\SIL Open Font License.txt" />
+    <None Include="Assets\FireAndIceDragons\README.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
