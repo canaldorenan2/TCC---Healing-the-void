@@ -44,7 +44,7 @@ public class Colossus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        navMeshAgent.SetDestination(player.transform.position);
+        //navMeshAgent.SetDestination(player.transform.position);
 
 
         if (timer > 3)
@@ -82,9 +82,9 @@ public class Colossus : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         navMeshAgent.SetDestination(this.transform.position);
-        animator.SetBool("Run", false);
+        //animator.SetBool("Run", false);
 
-        navMeshAgent.Stop();
+        //navMeshAgent.Stop();
 
         if (vulneravel)
         {
@@ -113,6 +113,7 @@ public class Colossus : MonoBehaviour
     public void Destino()
     {
             navMeshAgent.SetDestination(player.transform.position);
-            temAlvo = true;
+        animator.SetBool("Walk", true);
+        temAlvo = true;
     }
 }

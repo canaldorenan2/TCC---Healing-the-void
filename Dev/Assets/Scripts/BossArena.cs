@@ -14,6 +14,7 @@ public class BossArena : MonoBehaviour
         if (other.tag == "Player")
         {
             colossus.Destino();
+            colossus.animator.SetBool("Run", true);
         }
     }
 }
