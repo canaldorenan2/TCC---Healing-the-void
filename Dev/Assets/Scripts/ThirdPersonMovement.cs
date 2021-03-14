@@ -236,7 +236,7 @@ public class ThirdPersonMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             animator.SetBool("roll", true);
-            animator.GetCurrentAnimatorClipInfoCount();
+            //animator.GetCurrentAnimatorClipInfoCount();
         }
 
         if (!Input.anyKey)

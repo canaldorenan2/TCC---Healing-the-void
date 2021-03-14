@@ -13,8 +13,16 @@ public class BossArena : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            colossus.Destino();
+            colossus.playerNaArena = true;
             colossus.animator.SetBool("Run", true);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            colossus.playerNaArena = false;
         }
     }
 }

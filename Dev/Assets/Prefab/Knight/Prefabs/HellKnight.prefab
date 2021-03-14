@@ -2897,7 +2897,7 @@ Transform:
   m_GameObject: {fileID: 8997325218860841922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
   m_Children:
   - {fileID: 4490327733301952717}
   - {fileID: 1202582554161557368}
@@ -2945,9 +2945,9 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8997325218860841922}
   m_Enabled: 1
-  m_AgentTypeID: -1372625422
+  m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -2972,13 +2972,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vulneravel: 0
-  temAlvo: 0
+  playerNaArena: 0
   sliderVida: {fileID: 0}
   vida: 0
   navMeshAgent: {fileID: 984303566}
   player: {fileID: 0}
   arena: {fileID: 0}
+  destinoGenerico: {fileID: 0}
   animator: {fileID: 2411422401034238722}
+  ataque: {fileID: 3606931968775235250, guid: e23d131ca2595614fbe4dde26589023f, type: 3}
+  ataqueForte: {fileID: 2155847801907941844, guid: 449b01f5aa18a1d4c968546cb0a4bd42,
+    type: 3}
+  hit: {fileID: 1166487031442128437, guid: 8d67a37b27aab604ca47db9bf3e07206, type: 3}
+  death: {fileID: 7545656294450830433, guid: 9e15d47f8664e144fbf69ffec8bef7e4, type: 3}
+  risada: {fileID: 9161753287672649997, guid: 19b5e72e5115b684496b2714f8b52859, type: 3}
 --- !u!1 &9055193613897144365
 GameObject:
   m_ObjectHideFlags: 0

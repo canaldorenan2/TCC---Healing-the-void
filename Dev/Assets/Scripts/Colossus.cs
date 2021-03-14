@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class Colossus : MonoBehaviour
 {
     public bool vulneravel;
-    public bool temAlvo;
+    public bool playerNaArena, proximo, ficaVulneravel;
     public Slider sliderVida;
     int aux;
     public int vida;
@@ -19,7 +19,7 @@ public class Colossus : MonoBehaviour
 
     public Animator animator;
 
-    [Header ("Audios")]
+    [Header("Audios")]
     public AudioSource ataque;
     public AudioSource ataqueForte;
     public AudioSource hit;
@@ -27,7 +27,8 @@ public class Colossus : MonoBehaviour
     public AudioSource risada;
 
     float timer = 0;
-    
+    float tempoEspera = 0.5f;
+
 
 
     // Start is called before the first frame update
@@ -35,7 +36,9 @@ public class Colossus : MonoBehaviour
     {
         sliderVida.value = 600;
         vulneravel = false;
-        temAlvo = false;
+        playerNaArena = false;
+        ficaVulneravel = false;
+        proximo = false;
         aux = 0;
 
         navMeshAgent.SetDestination(destinoGenerico.transform.position);
@@ -47,41 +50,57 @@ public class Colossus : MonoBehaviour
         //navMeshAgent.SetDestination(player.transform.position);
 
 
-        if (timer > 3)
+        if (timer > tempoEspera)
+        {
+
+            timer = 0;
+            tempoEspera = Random.Range(0.62f, 2.03f);
+
+            if ((playerNaArena) && (!proximo))
+            {
+                Destino();
+            }
+            else
+                if ((playerNaArena) && (proximo))
+            {
+                animator.SetBool("Walk", false);
+                animator.SetBool("Run", false);
+            }
+                else
+            {
+                navMeshAgent.SetDestination(destinoGenerico.transform.position);
+                animator.SetBool("Walk", true);
+            }
+
+        }
+        else
         {
             timer += Time.deltaTime;
-
+            
         }
 
         // setar destino no player
         // adicionar um ao contador quando o player sair da area de ataque
         // setar um valor minimo de intervalo
         // depois de 3 vezez deixar o boss vulnerável
-        
+
     }
 
     private void FicaVulneravel()
     {
-        animator.SetBool("Ataque", true);
+        animator.SetBool("", true);
         ataque.Play();
-    }
-
-    private void ExecutaAcao()
-    {
-        if (this.transform.position != player.transform.position)
-        {
-            animator.SetBool("Run", true);
-        }
-        else
-        {
-            animator.SetBool("Run", false);
-
-        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         navMeshAgent.SetDestination(this.transform.position);
+        timer = timer + 10.10f;
+
+        animator.SetBool("Run", false);
+
+        proximo = true;
+
         //animator.SetBool("Run", false);
 
         //navMeshAgent.Stop();
@@ -95,14 +114,16 @@ public class Colossus : MonoBehaviour
         }
         else
         {
-                animator.SetBool("Ataque", true);
-                ataque.Play();
+            SetForAtack();
+            animator.SetBool("Ataque", true);
+            ataque.Play();
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
         animator.SetBool("Ataque", false);
+        proximo = false;
 
         if (other.tag == "Player")
         {
@@ -110,10 +131,16 @@ public class Colossus : MonoBehaviour
         }
     }
 
+    public void SetForAtack()
+    {
+        Destino();
+        transform.Rotate(10, 0, 0);
+    }
+
     public void Destino()
     {
-            navMeshAgent.SetDestination(player.transform.position);
-        animator.SetBool("Walk", true);
-        temAlvo = true;
+        navMeshAgent.SetDestination(player.transform.position);
+        animator.SetBool("Run", true);
+        animator.SetBool("Walk", false);
     }
 }
