@@ -5,7 +5,8 @@ using UnityEngine;
 public class Griffo : MonoBehaviour
 {
 
-    int vida, resistencia, dano;
+    float vida, resistencia;
+    int dano;
 
     bool tangivel;
 

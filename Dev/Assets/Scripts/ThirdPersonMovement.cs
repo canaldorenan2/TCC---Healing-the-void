@@ -22,10 +22,12 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public float speed = 18;
 
-    public int vida = 100;
+    public float vida = 100;
 
+
+    [Header ("Status")]
     public int dano = 10;
-    public int resistencia = 10;
+    public float resistencia = 10;
     public int lifeRegen = 1;
 
     float horizontal, vertical, targetAngle;

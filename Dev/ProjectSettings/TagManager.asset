@@ -12,6 +12,7 @@ TagManager:
   - Air
   - Leaf
   - SamuraiInimigo
+  - Colossus
   layers:
   - Default
   - TransparentFX

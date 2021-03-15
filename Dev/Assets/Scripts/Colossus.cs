@@ -55,6 +55,7 @@ public class Colossus : MonoBehaviour
 
             timer = 0;
             tempoEspera = Random.Range(0.62f, 2.03f);
+            ataque.Stop();
 
             if ((playerNaArena) && (!proximo))
             {
@@ -69,7 +70,9 @@ public class Colossus : MonoBehaviour
                 else
             {
                 navMeshAgent.SetDestination(destinoGenerico.transform.position);
+                animator.SetBool("Run", false);
                 animator.SetBool("Walk", true);
+                
             }
 
         }

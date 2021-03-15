@@ -2973,6 +2973,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vulneravel: 0
   playerNaArena: 0
+  proximo: 0
+  ficaVulneravel: 0
   sliderVida: {fileID: 0}
   vida: 0
   navMeshAgent: {fileID: 984303566}

@@ -6,9 +6,9 @@ public class SofreDano : MonoBehaviour
 {
 
 
-    public int CausaDano(int danoAtacante, int vidaAtacado, int resistenciaAtacado)
+    public float CausaDano(int danoAtacante, float vidaAtacado, float resistenciaAtacado)
     {
-        int novaVida;
+        float novaVida;
         novaVida = vidaAtacado - (resistenciaAtacado - danoAtacante);
 
         return novaVida;
