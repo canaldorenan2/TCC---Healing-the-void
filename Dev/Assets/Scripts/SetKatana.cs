@@ -9,6 +9,7 @@ public class SetKatana : MonoBehaviour
     //public AudioClip flauta;
     public AudioSource flauta1;
     public ThirdPersonMovement scriptPlayer;
+    public Griffo scriptGriffo;
 
     bool katanaAdquirida;
 
@@ -24,6 +25,8 @@ public class SetKatana : MonoBehaviour
         if (katanaAdquirida)
         {
             scriptPlayer.katana.SetActive(true);
+            scriptGriffo.katanaColetada = true;
+
         }
     }
 

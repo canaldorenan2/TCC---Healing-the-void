@@ -64,6 +64,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ControlaAreaLuta.cs" />
+    <Compile Include="Assets\DisplayNomeFase.cs" />
     <Compile Include="Assets\FireAndIceDragons\scripts\FlamesToggle.cs" />
     <Compile Include="Assets\FireAndIceDragons\scripts\SmoothCameraOrbit.cs" />
     <Compile Include="Assets\FireAndIceDragons\scripts\toggle.cs" />
@@ -79,7 +81,10 @@
     <Compile Include="Assets\Scripts\Especificos fase2\DestroiBarreira.cs" />
     <Compile Include="Assets\Scripts\FlyJump.cs" />
     <Compile Include="Assets\Scripts\Griffo.cs" />
+    <Compile Include="Assets\Scripts\Menu.cs" />
+    <Compile Include="Assets\Scripts\Move.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\ProjetilAr.cs" />
     <Compile Include="Assets\Scripts\ProximaFase.cs" />
     <Compile Include="Assets\Scripts\Rock.cs" />
     <Compile Include="Assets\Scripts\RockDestroy.cs" />

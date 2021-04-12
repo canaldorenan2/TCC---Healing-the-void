@@ -16,6 +16,8 @@ public class Colossus : MonoBehaviour
     public GameObject player;
     public GameObject arena;
     public GameObject destinoGenerico;
+    public GameObject hudBoss;
+    public GameObject hudExtensao;
 
     public Animator animator;
 
@@ -40,6 +42,7 @@ public class Colossus : MonoBehaviour
         ficaVulneravel = false;
         proximo = false;
         aux = 0;
+        
 
         navMeshAgent.SetDestination(destinoGenerico.transform.position);
     }
@@ -49,13 +52,20 @@ public class Colossus : MonoBehaviour
     {
         //navMeshAgent.SetDestination(player.transform.position);
 
+        if (sliderVida.value < 1)
+        {
+            hudBoss.SetActive(false);
+            hudExtensao.SetActive(false);
+            this.gameObject.SetActive(false);
+            Destroy(this, 5);
+        }
 
         if (timer > tempoEspera)
         {
 
             timer = 0;
             tempoEspera = Random.Range(0.62f, 2.03f);
-            ataque.Stop();
+            //ataque.Stop();
 
             if ((playerNaArena) && (!proximo))
             {
@@ -64,8 +74,12 @@ public class Colossus : MonoBehaviour
             else
                 if ((playerNaArena) && (proximo))
             {
+                animator.SetBool("Ataque", false);
                 animator.SetBool("Walk", false);
                 animator.SetBool("Run", false);
+                ataque.Play();
+                animator.SetBool("Ataque", true);
+
             }
                 else
             {
@@ -87,12 +101,6 @@ public class Colossus : MonoBehaviour
         // setar um valor minimo de intervalo
         // depois de 3 vezez deixar o boss vulnerável
 
-    }
-
-    private void FicaVulneravel()
-    {
-        animator.SetBool("", true);
-        ataque.Play();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -120,6 +128,7 @@ public class Colossus : MonoBehaviour
             SetForAtack();
             animator.SetBool("Ataque", true);
             ataque.Play();
+
         }
     }
 

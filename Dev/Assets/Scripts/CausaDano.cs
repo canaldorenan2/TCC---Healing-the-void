@@ -1,17 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CausaDano : MonoBehaviour
 {
     Dragao dragon;
     ThirdPersonMovement player;
 
+    Griffo griffo;
+
     float dano;
 
     void Start()
     {
-        dragon = GameObject.Find("Dragon").GetComponent<Dragao>();
+        if (SceneManager.GetActiveScene().name == "Level 1")
+        {
+            griffo = GameObject.Find("HIPPOGRIFF_LEGACY").GetComponent<Griffo>();
+        }
+        else
+        {
+            dragon = GameObject.Find("Dragon").GetComponent<Dragao>();
+        }
+
+        
+        
         player = GameObject.Find("ThirdPersonPlayer").GetComponent<ThirdPersonMovement>();
     }
 

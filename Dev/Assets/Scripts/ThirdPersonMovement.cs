@@ -36,6 +36,8 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public GameObject katana;
 
+    public GameObject projetil;
+
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -44,7 +46,7 @@ public class ThirdPersonMovement : MonoBehaviour
         flyJump = false;
         jump = true;
         ataque1 = false;
-        speed = 10;
+        //speed = 10;
         vida = 80;
         
 
@@ -111,6 +113,8 @@ public class ThirdPersonMovement : MonoBehaviour
             // Realiza o movimento 
             characterController.Move(moveDirection * speed * Time.deltaTime);
         }
+
+        animator.SetBool("roll", false);
 
         ControleAnimacao();
 
@@ -239,6 +243,10 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             animator.SetBool("roll", true);
             //animator.GetCurrentAnimatorClipInfoCount();
+
+            GameObject projetilPf = Instantiate(projetil, this.transform.position, this.transform.rotation);
+
+            projetilPf.GetComponent<Rigidbody>().AddForce(this.transform.forward * 1000);
         }
 
         if (!Input.anyKey)
