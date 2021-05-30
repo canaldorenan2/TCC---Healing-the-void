@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
@@ -24,11 +25,15 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public float vida = 100;
 
+    public Image descricaoColetaveis;
+
 
     [Header ("Status")]
     public int dano = 10;
     public float resistencia = 10;
     public int lifeRegen = 1;
+
+    public int agua, terra, fogo, ar = 0;
 
     float horizontal, vertical, targetAngle;
 
@@ -37,6 +42,10 @@ public class ThirdPersonMovement : MonoBehaviour
     public GameObject katana;
 
     public GameObject projetil;
+
+    public AudioSource coletaveisAudio;
+
+    public Text tagua, tterra, tfogo, tar;
 
     private void Start()
     {
@@ -126,6 +135,27 @@ public class ThirdPersonMovement : MonoBehaviour
         if (vida > 101)
         {
             vida = 100;
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Tab))
+        {
+            
+            tagua.text = agua.ToString();
+            tterra.text = terra.ToString();
+            tfogo.text = fogo.ToString();
+            tar.text = ar.ToString();
+
+            descricaoColetaveis.gameObject.SetActive(true);
+
+            Debug.Log("agua: " +agua);
+            
+        }
+        else
+        {
+            descricaoColetaveis.gameObject.SetActive(false);
         }
     }
 

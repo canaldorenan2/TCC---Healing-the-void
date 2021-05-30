@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class DisplayNomeFase : MonoBehaviour
 {
-    public GameObject textoFase;
+    public GameObject Texto;
+    
 
     bool display;
     float timer;
@@ -24,7 +25,7 @@ public class DisplayNomeFase : MonoBehaviour
 
             if (timer > 5)
             {
-                textoFase.SetActive(false);
+                Texto.SetActive(false);
                 Destroy(this.gameObject);
             }
         }
@@ -37,7 +38,7 @@ public class DisplayNomeFase : MonoBehaviour
         {
             if (!display)
             {
-                textoFase.SetActive(true);
+                Texto.SetActive(true);
                 display = true;
             }
         }

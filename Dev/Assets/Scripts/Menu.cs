@@ -20,6 +20,7 @@ public class Menu : MonoBehaviour
         if (timer > 6)
         {
             logo.SetActive(false);
+            //Destroy(logo.gameObject);
             canvas.SetActive(true);
         }
     }
@@ -27,10 +28,12 @@ public class Menu : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene("Level 1");
+        Debug.Log("Play");
     }
 
     public void Exit()
     {
         Application.Quit();
+        Debug.Log("Quit");
     }
 }

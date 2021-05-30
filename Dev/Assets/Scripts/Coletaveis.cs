@@ -12,7 +12,7 @@ public class Coletaveis : MonoBehaviour
 
     ThirdPersonMovement scriptPlayer;
 
-    public AudioSource flautaColetaveis;
+    //public AudioSource flautaColetaveis;
 
 
     void Start()
@@ -52,7 +52,7 @@ public class Coletaveis : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 // Não sei por que não esta funcionando
-                flautaColetaveis.Play();
+                //flautaColetaveis.Play();
 
                 if (leaf)
                 {
@@ -62,26 +62,35 @@ public class Coletaveis : MonoBehaviour
                 if (fire)
                 {
                     scriptPlayer.dano += 2;
+                    scriptPlayer.coletaveisAudio.Play();
+                    scriptPlayer.fogo += 1;
                 }
 
                 if (water)
                 {
                     scriptPlayer.tempoParaRegen -= 1;
+                    scriptPlayer.coletaveisAudio.Play();
+                    scriptPlayer.agua += 1;
                 }
 
                 if (air)
                 {
                     scriptPlayer.speed += 2;
+                    scriptPlayer.coletaveisAudio.Play();
+                    scriptPlayer.ar += 1;
                 }
 
                 if (earth)
                 {
                     scriptPlayer.resistencia += 1;
+                    scriptPlayer.coletaveisAudio.Play();
+                    scriptPlayer.terra += 1;
                 }
-
+                //scriptPlayer.coletaveisAudio.Play();
                 this.gameObject.transform.Translate(0, -10, 0);
                 this.gameObject.SetActive(false);
                 text.gameObject.SetActive(false);
+                
             }
         }
     }

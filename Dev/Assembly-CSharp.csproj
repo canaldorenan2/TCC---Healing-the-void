@@ -64,8 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ControlaAreaLuta.cs" />
-    <Compile Include="Assets\DisplayNomeFase.cs" />
     <Compile Include="Assets\FireAndIceDragons\scripts\FlamesToggle.cs" />
     <Compile Include="Assets\FireAndIceDragons\scripts\SmoothCameraOrbit.cs" />
     <Compile Include="Assets\FireAndIceDragons\scripts\toggle.cs" />
@@ -75,7 +73,9 @@
     <Compile Include="Assets\Scripts\CausaDano.cs" />
     <Compile Include="Assets\Scripts\Coletaveis.cs" />
     <Compile Include="Assets\Scripts\Colossus.cs" />
+    <Compile Include="Assets\Scripts\ControlaAreaLuta.cs" />
     <Compile Include="Assets\Scripts\Dano.cs" />
+    <Compile Include="Assets\Scripts\DisplayNomeFase.cs" />
     <Compile Include="Assets\Scripts\Dragao.cs" />
     <Compile Include="Assets\Scripts\DragaoAux.cs" />
     <Compile Include="Assets\Scripts\Especificos fase2\DestroiBarreira.cs" />
@@ -95,6 +95,8 @@
     <Compile Include="Assets\Scripts\StatusBase.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonMovement.cs" />
     <Compile Include="Assets\Scripts\bossset.cs" />
+    <Compile Include="Assets\Scripts\reset.cs" />
+    <Compile Include="Assets\Scripts\trap.cs" />
     <None Include="Assets\20 Logos PSD\Fonts\chunkfiveex\SIL Open Font License 1.1.txt" />
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
     <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM2.shader" />

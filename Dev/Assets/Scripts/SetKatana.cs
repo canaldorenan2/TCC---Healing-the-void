@@ -11,6 +11,8 @@ public class SetKatana : MonoBehaviour
     public ThirdPersonMovement scriptPlayer;
     public Griffo scriptGriffo;
 
+    public Image imagem;
+
     bool katanaAdquirida;
 
     // Start is called before the first frame update
@@ -26,6 +28,7 @@ public class SetKatana : MonoBehaviour
         {
             scriptPlayer.katana.SetActive(true);
             scriptGriffo.katanaColetada = true;
+            imagem.gameObject.SetActive(true);
 
         }
     }
