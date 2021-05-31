@@ -1,0 +1,21 @@
+Opa Pedro, tudo bem?
+
+Considerações
+
+Bom, muito obrigado pelo teu tempo sempre cara, gostaria de primeiramente me desculpar por não conseguir entregar o jogo finalizado! Creio que o que mais fiquei devendo foi o combate, mas no que consegui entregar
+
+Menu 
+Fase 1 
+Fase 2 
+
+Na fase 1 tem alguns coletaveis, porém não são 3 de cada, não sei se ficou confuso.
+Na fase 1 o hipogriffo segue o playr, porém ambos não conseguem causar/receber dano.
+Na fase 1 a vida bugou e sumiu! Não tive tempo para tentar arrumar antes da entrega!
+
+
+Na fase 2 o samurai inimigo ficou parado kkkkk
+Na fase 2 o Dragão não ataca/recebe dano
+Na fase 3 o Boss Final não causa/recebe dano
+Tem um trecho na fase 2 no final , onde tem uma ponte invisível. É proposital.
+
+Não implementei para os coletaveis contabilizar depois de mudar de fase. Não tem 3 coletaveis espalhados pelo jogo todo. Alguns tem 1 outros 2.
