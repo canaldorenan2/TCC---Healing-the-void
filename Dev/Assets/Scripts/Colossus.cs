@@ -10,14 +10,14 @@ public class Colossus : MonoBehaviour
     public bool playerNaArena, proximo, ficaVulneravel;
     public Slider sliderVida;
     int aux;
-    public int vida;
+    public float vida;
     public NavMeshAgent navMeshAgent;
 
     public GameObject player;
     public GameObject arena;
     public GameObject destinoGenerico;
     public GameObject hudBoss;
-    public GameObject hudExtensao;
+    //public GameObject hudExtensao;
 
     public Animator animator;
 
@@ -36,7 +36,9 @@ public class Colossus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sliderVida.value = 600;
+        vida = 100;
+        sliderVida.value = vida;
+        
         vulneravel = false;
         playerNaArena = false;
         ficaVulneravel = false;
@@ -55,7 +57,7 @@ public class Colossus : MonoBehaviour
         if (sliderVida.value < 1)
         {
             hudBoss.SetActive(false);
-            hudExtensao.SetActive(false);
+            //hudExtensao.SetActive(false);
             this.gameObject.SetActive(false);
             Destroy(this, 5);
         }
@@ -101,35 +103,41 @@ public class Colossus : MonoBehaviour
         // setar um valor minimo de intervalo
         // depois de 3 vezez deixar o boss vulnerável
 
+        sliderVida.value = vida;
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        navMeshAgent.SetDestination(this.transform.position);
-        timer = timer + 10.10f;
-
-        animator.SetBool("Run", false);
-
-        proximo = true;
-
-        //animator.SetBool("Run", false);
-
-        //navMeshAgent.Stop();
-
-        if (vulneravel)
+        if (other.tag == "Player")
         {
-            if (other.tag == "Player")
+            navMeshAgent.SetDestination(this.transform.position);
+            timer = timer + 10.10f;
+
+            animator.SetBool("Run", false);
+
+            proximo = true;
+
+            //animator.SetBool("Run", false);
+
+            //navMeshAgent.Stop();
+
+            if (vulneravel)
             {
+                if (other.tag == "Player")
+                {
+
+                }
+            }
+            else
+            {
+                SetForAtack();
+                animator.SetBool("Ataque", true);
+                ataque.Play();
 
             }
         }
-        else
-        {
-            SetForAtack();
-            animator.SetBool("Ataque", true);
-            ataque.Play();
-
-        }
+        
     }
 
     private void OnTriggerExit(Collider other)

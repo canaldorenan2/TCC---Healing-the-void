@@ -46,6 +46,14 @@ public class CausaDano : MonoBehaviour
                 dano = 25;
                 player.vida = player.vida - (dano - (player.resistencia / 4));
             }
+
+
+            if (this.tag == "SamuraiInimigo")
+            {
+                Debug.Log("Dano aplicado");
+                dano = 25;
+                player.vida = player.vida - (dano - (player.resistencia / 4));
+            }
         }
     }
 

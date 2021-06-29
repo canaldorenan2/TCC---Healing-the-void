@@ -13,6 +13,8 @@ TagManager:
   - Leaf
   - SamuraiInimigo
   - Colossus
+  - Move
+  - Chamas
   layers:
   - Default
   - TransparentFX

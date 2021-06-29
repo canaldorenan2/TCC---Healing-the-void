@@ -13,9 +13,17 @@ public class Dragao : MonoBehaviour
 
     public Transform referencia;
 
+    public Transform player;
+
     public int controlaDestino;
 
-    public bool playerAtacavel, localDaTreta, setadoLocalDaTreta, vivo;
+    public bool playerAtacavel, localDaTreta, setadoLocalDaTreta, vivo, noPit;
+
+    public GameObject fogoPrefabe, instanciaFogoPrefabe;
+
+    float timer = 0;
+
+    public GameObject antigoDragaoTxt;
 
 
 
@@ -32,6 +40,7 @@ public class Dragao : MonoBehaviour
         playerAtacavel = false;
         localDaTreta = false;
         vivo = true;
+        noPit = false;
 
         //referencia = transform.Find("Referencia").GetComponent<Transform>();
     }
@@ -45,10 +54,23 @@ public class Dragao : MonoBehaviour
             {
                 //Voar();
                 GeraDestino();
+                noPit = false;
             }
             else
             {
-                navMeshAgent.SetDestination(referencia.position);
+                if (!noPit)
+                {
+                    navMeshAgent.SetDestination(referencia.position);
+                }
+                else
+                {
+
+                }
+
+                if(navMeshAgent.transform.position == referencia.position)
+                {
+                    //noPit = true;
+                }
             }
         }
         else
@@ -58,6 +80,7 @@ public class Dragao : MonoBehaviour
                 if ((navMeshAgent.transform.position.x == referencia.position.x) && (navMeshAgent.transform.position.z == referencia.position.z))
                 {
                     animator.SetBool("PlayerAround", true);
+                    noPit = true;
                 }
                 else
                 {
@@ -69,19 +92,56 @@ public class Dragao : MonoBehaviour
                     }
                     navMeshAgent.SetDestination(referencia.position);
                 }
-                
+
             }
             else
             {
+                //   navMeshAgent.SetDestination(player.position);
 
             }
+
+            
         }
 
-        if (vida > 1)
+        if (vida < 1)
         {
             vivo = false;
+
+
         }
 
+        if (noPit)
+        {
+            Gira();
+            CospeFogo();
+        }
+        else
+        {
+            animator.SetBool("CospeFogo", false);
+            timer = 0;
+        }
+
+    }
+
+    private void CospeFogo()
+    {
+        timer += Time.deltaTime;
+
+        if (timer > 15)
+        {
+            instanciaFogoPrefabe = Instantiate(fogoPrefabe, this.transform);
+            Destroy(instanciaFogoPrefabe, 17.5f);
+            animator.SetBool("CospeFogo", true);
+            timer = 0;
+        }
+    }
+
+    private void Gira()
+    {
+
+        Vector3 posicaoPlayer = new Vector3(player.gameObject.transform.position.x, player.gameObject.transform.position.y, player.gameObject.transform.position.z);
+
+        transform.LookAt(posicaoPlayer);
     }
 
     private void Voar()
@@ -138,5 +198,12 @@ public class Dragao : MonoBehaviour
 
     }
 
-
+    private void OnParticleCollision(GameObject other)
+    {
+        {
+            vida -= 3;
+           
+            Debug.Log("script dragao: Entrou!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        }
+    }
 }

@@ -26,8 +26,19 @@ public class FlyJump : MonoBehaviour
             refScriptThirdPerson.flyJump = true;
             refScriptThirdPerson.animator.SetBool("jump", true);
             refScriptThirdPerson.velocidadeAceleracao = 10;
+        }        
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (this.tag == "Move")
+        {
+            Vector3 move = new Vector3(1 * Time.deltaTime, 0, 0);
+            other.gameObject.transform.Translate(move);
+            
         }
     }
+
 
     private void OnTriggerExit(Collider other)
     {

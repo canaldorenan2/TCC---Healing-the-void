@@ -20,7 +20,7 @@ public class BossArena : MonoBehaviour
             colossus.animator.SetBool("Run", true);
             audio.Play();
             colossus.hudBoss.SetActive(true);
-            colossus.hudExtensao.SetActive(true);
+            //colossus.hudExtensao.SetActive(true);
         }
     }
 

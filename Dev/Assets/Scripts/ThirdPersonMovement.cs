@@ -28,12 +28,13 @@ public class ThirdPersonMovement : MonoBehaviour
     public Image descricaoColetaveis;
 
 
-    [Header ("Status")]
+    [Header("Status")]
     public int dano = 10;
     public float resistencia = 10;
     public int lifeRegen = 1;
 
     public int agua, terra, fogo, ar = 0;
+    public static int sagua, sterra, sfogo, sar = 0;
 
     float horizontal, vertical, targetAngle;
 
@@ -47,6 +48,12 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public Text tagua, tterra, tfogo, tar;
 
+    int cont = 0;
+
+    public bool poderAr;
+
+    public float contadorAnimacao;
+
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -56,20 +63,22 @@ public class ThirdPersonMovement : MonoBehaviour
         jump = true;
         ataque1 = false;
         //speed = 10;
-        vida = 80;
-        
+        vida = 99;
 
+        poderAr = true;
 
 
         if (SceneManager.GetActiveScene().name == "Level 1")
         {
             katana.SetActive(false);
-            tempoParaRegen = 10;
+
 
         }
 
+        tempoParaRegen = 5;
+
         contadorRegen = tempoParaRegen;
-        
+
     }
 
     // Update is called once per frame
@@ -123,8 +132,6 @@ public class ThirdPersonMovement : MonoBehaviour
             characterController.Move(moveDirection * speed * Time.deltaTime);
         }
 
-        animator.SetBool("roll", false);
-
         ControleAnimacao();
 
         if (ataque1)
@@ -142,7 +149,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Tab))
         {
-            
+
             tagua.text = agua.ToString();
             tterra.text = terra.ToString();
             tfogo.text = fogo.ToString();
@@ -150,13 +157,41 @@ public class ThirdPersonMovement : MonoBehaviour
 
             descricaoColetaveis.gameObject.SetActive(true);
 
-            Debug.Log("agua: " +agua);
-            
+            Debug.Log("agua: " + agua);
+
         }
         else
         {
             descricaoColetaveis.gameObject.SetActive(false);
         }
+
+        if (SceneManager.GetActiveScene().name == "Level 1")
+        {
+            sagua = agua;
+            sfogo = fogo;
+            sar = ar;
+            sterra = terra;
+        }
+
+        if (SceneManager.GetActiveScene().name == "Level 2")
+        {
+            if (cont == 0)
+            {
+                agua = sagua;
+                fogo = sfogo;
+                ar = sar;
+                terra = sterra;
+                cont = 1;
+            }
+
+        }
+
+        if (vida < 0)
+        {
+            vida = 0;
+            SceneManager.LoadScene("Level 2");
+        }
+
     }
 
     void ControlaAtaque1()
@@ -269,14 +304,35 @@ public class ThirdPersonMovement : MonoBehaviour
 
         }
 
+
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            animator.SetBool("roll", true);
-            //animator.GetCurrentAnimatorClipInfoCount();
 
-            GameObject projetilPf = Instantiate(projetil, this.transform.position, this.transform.rotation);
+            if ((contadorAnimacao) > 2 || !(animator.GetBool("AirPower")))
+            {
+                if (poderAr)
+                {
+                    animator.SetBool("AirPower", true);
+                    contadorAnimacao = 0;
+                }
+            }
+        }
+        else
+        {
+            if ((contadorAnimacao > 1 && contadorAnimacao < 2) && (animator.GetBool("AirPower")))
+            {
+                animator.SetBool("AirPower", false);
 
-            projetilPf.GetComponent<Rigidbody>().AddForce(this.transform.forward * 1000);
+                Quaternion rotation = new Quaternion(0, this.transform.rotation.y, 0, 0);
+
+                //Vector3 rotation = new Vector3(0, this.transform.position.y, 0);
+
+                GameObject projetilPf = Instantiate(projetil, this.transform.position, this.transform.rotation);
+
+                projetilPf.GetComponent<Rigidbody>().AddForce(this.transform.forward * 1000);
+
+                contadorAnimacao = 0;
+            }
         }
 
         if (!Input.anyKey)
@@ -284,6 +340,17 @@ public class ThirdPersonMovement : MonoBehaviour
             //animator.setIdle true;
         }
 
+        contadorAnimacao += Time.deltaTime;
+
+
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
+        {
+            vida -= 0.00001002f;
+            vida += 0.00001001f;
+        }
     }
 }
 

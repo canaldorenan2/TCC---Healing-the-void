@@ -12,7 +12,7 @@ public class Coletaveis : MonoBehaviour
 
     ThirdPersonMovement scriptPlayer;
 
-    //public AudioSource flautaColetaveis;
+    public displayAirPower _displayAirPower;
 
 
     void Start()
@@ -78,6 +78,11 @@ public class Coletaveis : MonoBehaviour
                     scriptPlayer.speed += 2;
                     scriptPlayer.coletaveisAudio.Play();
                     scriptPlayer.ar += 1;
+                    if (scriptPlayer.ar == 3)
+                    {
+                        scriptPlayer.poderAr = true;
+                        _displayAirPower.displayTxt();
+                    }
                 }
 
                 if (earth)

@@ -141,6 +141,11 @@ public class Griffo : MonoBehaviour
             }
         }
 
+        if (other.tag == "Player")
+        {
+            longe = false;
+        }
+
         // Causa Dano
 
         if (other.gameObject.tag == "Player")
