@@ -15,7 +15,7 @@ public class Samuzai : MonoBehaviour
 
     public Animator animator;
 
-    public float vida;
+    public float vida = 100;
 
     float timer = 0;
 
@@ -58,7 +58,7 @@ public class Samuzai : MonoBehaviour
 
         if (vida < 0)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
     }
 

@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class Griffo : MonoBehaviour
 {
 
-    float vida, resistencia;
+    public float vida, resistencia;
     int dano;
     float timer;
 
@@ -33,13 +33,15 @@ public class Griffo : MonoBehaviour
 
     public bool playerAround;
 
+    public ProximaFase proximafase;
+
     // Start is called before the first frame update
     void Start()
     {
         tangivel = false;
         atacando = false;
         combate = false;
-        vida = 150;
+        vida = 600;
         resistencia = 15;
         dano = 25;
         playerAround = false;
@@ -66,6 +68,7 @@ public class Griffo : MonoBehaviour
 
         if (vida < 1)
         {
+            proximafase.inimigo = false;
             this.gameObject.SetActive(false);
         }
     }

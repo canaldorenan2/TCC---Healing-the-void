@@ -6,7 +6,7 @@ public class ProjetilAr : MonoBehaviour
 {
 
     Dragao dragao;
-    Colossus colossus;
+     Colossus colossus;
 
     public int velocidade = 1;
 
@@ -30,6 +30,7 @@ public class ProjetilAr : MonoBehaviour
 
         if (other.tag == "Dragon")
         {
+            Debug.Log("Atingiu Drag");
             dragao.vida -= 10;
         }
 

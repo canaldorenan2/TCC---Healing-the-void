@@ -15,6 +15,9 @@ TagManager:
   - Colossus
   - Move
   - Chamas
+  - Griff
+  - Duplica
+  - Recupera
   layers:
   - Default
   - TransparentFX

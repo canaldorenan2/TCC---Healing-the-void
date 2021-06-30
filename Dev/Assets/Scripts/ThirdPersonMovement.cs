@@ -65,7 +65,7 @@ public class ThirdPersonMovement : MonoBehaviour
         //speed = 10;
         vida = 99;
 
-        poderAr = true;
+        poderAr = false;
 
 
         if (SceneManager.GetActiveScene().name == "Level 1")
@@ -189,7 +189,16 @@ public class ThirdPersonMovement : MonoBehaviour
         if (vida < 0)
         {
             vida = 0;
-            SceneManager.LoadScene("Level 2");
+
+            if (SceneManager.GetActiveScene().name == "Level 1")
+            {
+                SceneManager.LoadScene("Level 1");
+            }
+            else
+            {
+                SceneManager.LoadScene("Level 2");
+            }
+            
         }
 
     }

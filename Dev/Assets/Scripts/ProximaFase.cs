@@ -9,6 +9,13 @@ public class ProximaFase : MonoBehaviour
     int fragmentoAgua, fragmentoTerra, fragmentoFogo, fragmentoAr = 0;
     int cont = 0;
 
+    public bool inimigo;
+
+    private void Start()
+    {
+        inimigo = true;
+    }
+
     void GuardaValores()
     {
         fragmentoAgua = ThirdPersonMovement.sagua;
@@ -44,11 +51,16 @@ public class ProximaFase : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player" && SceneManager.GetActiveScene().name == "Level 1")
+
+        if (!inimigo)
         {
-            GuardaValores();
-            DontDestroyOnLoad(this.gameObject);
-            SceneManager.LoadScene("Level 2");
+            if (other.tag == "Player" && SceneManager.GetActiveScene().name == "Level 1")
+            {
+                GuardaValores();
+                DontDestroyOnLoad(this.gameObject);
+                SceneManager.LoadScene("Level 2");
+            }
         }
+        
     }
 }

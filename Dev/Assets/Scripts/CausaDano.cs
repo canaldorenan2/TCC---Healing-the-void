@@ -22,7 +22,6 @@ public class CausaDano : MonoBehaviour
         {
             dragon = GameObject.Find("Dragon").GetComponent<Dragao>();
         }
-
         
         
         player = GameObject.Find("ThirdPersonPlayer").GetComponent<ThirdPersonMovement>();
@@ -36,10 +35,9 @@ public class CausaDano : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("pt1");
         if (other.tag == "Player")
         {
-            Debug.Log("pt2");
+
             if (this.tag == "Colossus")
             {
                 Debug.Log("Dano aplicado");
@@ -51,7 +49,14 @@ public class CausaDano : MonoBehaviour
             if (this.tag == "SamuraiInimigo")
             {
                 Debug.Log("Dano aplicado");
-                dano = 25;
+                dano = 20;
+                player.vida = player.vida - (dano - (player.resistencia / 4));
+            }
+
+
+            if (this.tag == "Griff")
+            {
+                dano = 15;
                 player.vida = player.vida - (dano - (player.resistencia / 4));
             }
         }

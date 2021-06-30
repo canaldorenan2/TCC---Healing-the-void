@@ -5,14 +5,35 @@ using UnityEngine;
 public class Dano : MonoBehaviour
 {
 
-    public StatusBase atacante;
-    public StatusBase atacado;
 
-    void CausaDano(StatusBase _atacante, StatusBase _atacado)
+
+    private void OnTriggerEnter(Collider other)
     {
-        atacante = _atacante;
-        atacado = _atacado;
+        Debug.Log("entrou");
 
-        atacado.Vida = atacado.Vida - atacante.ValorDano;
+        if (other.tag == "Griff")
+        {
+            Debug.Log("Atacado - Griff");
+
+            GameObject.Find("HIPPOGRIFF_LEGACY").GetComponent<Griffo>().vida -= 7;
+        }
+
+        if (other.tag == "SamuraiInimigo")
+        {
+            Debug.Log("Atacado - SamuraiInimigo");
+            GameObject.Find("Samurai_Z").GetComponent<Samuzai>().vida -= 5;
+        }
+
+        if (other.tag == "Dragon")
+        {
+            Debug.Log("Atacado - Dragon");
+            GameObject.Find("Dragon").GetComponent<Dragao>().vida -= 1;
+        }
+
+        if (other.tag == "Colossus")
+        {
+            Debug.Log("Atacado - Colossus");
+            GameObject.Find("Colossus").GetComponent<Colossus>().vida -= 3;
+        }
     }
 }

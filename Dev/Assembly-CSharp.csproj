@@ -101,6 +101,7 @@
     <Compile Include="Assets\Scripts\bossset.cs" />
     <Compile Include="Assets\Scripts\reset.cs" />
     <Compile Include="Assets\Scripts\trap.cs" />
+    <Compile Include="Assets\arrumaEspada.cs" />
     <Compile Include="Assets\danoSamuzai.cs" />
     <Compile Include="Assets\danoSword.cs" />
     <Compile Include="Assets\displayAirPower.cs" />

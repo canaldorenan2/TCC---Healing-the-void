@@ -1,230 +1,656 @@
 fileFormatVersion: 2
 guid: 54fae1be3e20f5b48a2bc8ca36eb5364
 ModelImporter:
-  serializedVersion: 18
-  fileIDToRecycleName:
-    100000: Cercle002
-    100002: Cercle003
-    100004: Cha__ne CI001
-    100006: Cha__ne CI002
-    100008: Factice001
-    100010: Factice002
-    100012: Factice003
-    100014: Factice004
-    100016: HIPPOGRIFF
-    100018: //RootNode
-    100020: HIPPOGRIFF_
-    100022: HIPPOGRIFF_ Footsteps
-    100024: HIPPOGRIFF_ Head
-    100026: HIPPOGRIFF_ HeadNub
-    100028: HIPPOGRIFF_ L Calf
-    100030: HIPPOGRIFF_ L Clavicle
-    100032: HIPPOGRIFF_ L Finger0
-    100034: HIPPOGRIFF_ L Finger01
-    100036: HIPPOGRIFF_ L Finger02
-    100038: HIPPOGRIFF_ L Finger0Nub
-    100040: HIPPOGRIFF_ L Finger1
-    100042: HIPPOGRIFF_ L Finger11
-    100044: HIPPOGRIFF_ L Finger12
-    100046: HIPPOGRIFF_ L Finger1Nub
-    100048: HIPPOGRIFF_ L Finger2
-    100050: HIPPOGRIFF_ L Finger21
-    100052: HIPPOGRIFF_ L Finger22
-    100054: HIPPOGRIFF_ L Finger2Nub
-    100056: HIPPOGRIFF_ L Finger3
-    100058: HIPPOGRIFF_ L Finger31
-    100060: HIPPOGRIFF_ L Finger32
-    100062: HIPPOGRIFF_ L Finger3Nub
-    100064: HIPPOGRIFF_ L Foot
-    100066: HIPPOGRIFF_ L Forearm
-    100068: HIPPOGRIFF_ L Hand
-    100070: HIPPOGRIFF_ L HorseLink
-    100072: HIPPOGRIFF_ L Thigh
-    100074: HIPPOGRIFF_ L Toe0
-    100076: HIPPOGRIFF_ L Toe0Nub
-    100078: HIPPOGRIFF_ L UpperArm
-    100080: HIPPOGRIFF_ Neck
-    100082: HIPPOGRIFF_ Neck1
-    100084: HIPPOGRIFF_ Neck2
-    100086: HIPPOGRIFF_ Neck3
-    100088: HIPPOGRIFF_ Pelvis
-    100090: HIPPOGRIFF_ Queue de cheval 1
-    100092: HIPPOGRIFF_ Queue de cheval 1Nub
-    100094: HIPPOGRIFF_ R Calf
-    100096: HIPPOGRIFF_ R Clavicle
-    100098: HIPPOGRIFF_ R Finger0
-    100100: HIPPOGRIFF_ R Finger01
-    100102: HIPPOGRIFF_ R Finger02
-    100104: HIPPOGRIFF_ R Finger0Nub
-    100106: HIPPOGRIFF_ R Finger1
-    100108: HIPPOGRIFF_ R Finger11
-    100110: HIPPOGRIFF_ R Finger12
-    100112: HIPPOGRIFF_ R Finger1Nub
-    100114: HIPPOGRIFF_ R Finger2
-    100116: HIPPOGRIFF_ R Finger21
-    100118: HIPPOGRIFF_ R Finger22
-    100120: HIPPOGRIFF_ R Finger2Nub
-    100122: HIPPOGRIFF_ R Finger3
-    100124: HIPPOGRIFF_ R Finger31
-    100126: HIPPOGRIFF_ R Finger32
-    100128: HIPPOGRIFF_ R Finger3Nub
-    100130: HIPPOGRIFF_ R Foot
-    100132: HIPPOGRIFF_ R Forearm
-    100134: HIPPOGRIFF_ R Hand
-    100136: HIPPOGRIFF_ R HorseLink
-    100138: HIPPOGRIFF_ R Thigh
-    100140: HIPPOGRIFF_ R Toe0
-    100142: HIPPOGRIFF_ R Toe0Nub
-    100144: HIPPOGRIFF_ R UpperArm
-    100146: HIPPOGRIFF_ Spine
-    100148: HIPPOGRIFF_ Spine1
-    100150: HIPPOGRIFF_ Tail
-    100152: HIPPOGRIFF_ Tail1
-    100154: HIPPOGRIFF_ Tail2
-    100156: HIPPOGRIFF_ Tail3
-    100158: HIPPOGRIFF_ Tail4
-    100160: HIPPOGRIFF_ TailNub
-    100162: HIPPOGRIFF_WING_L_1
-    100164: HIPPOGRIFF_WING_L_2
-    100166: HIPPOGRIFF_WING_L_3
-    100168: HIPPOGRIFF_WING_L_nub
-    100170: HIPPOGRIFF_WING_R_1
-    100172: HIPPOGRIFF_WING_R_2
-    100174: HIPPOGRIFF_WING_R_3
-    100176: HIPPOGRIFF_WING_R_nub
-    400000: Cercle002
-    400002: Cercle003
-    400004: Cha__ne CI001
-    400006: Cha__ne CI002
-    400008: Factice001
-    400010: Factice002
-    400012: Factice003
-    400014: Factice004
-    400016: HIPPOGRIFF
-    400018: //RootNode
-    400020: HIPPOGRIFF_
-    400022: HIPPOGRIFF_ Footsteps
-    400024: HIPPOGRIFF_ Head
-    400026: HIPPOGRIFF_ HeadNub
-    400028: HIPPOGRIFF_ L Calf
-    400030: HIPPOGRIFF_ L Clavicle
-    400032: HIPPOGRIFF_ L Finger0
-    400034: HIPPOGRIFF_ L Finger01
-    400036: HIPPOGRIFF_ L Finger02
-    400038: HIPPOGRIFF_ L Finger0Nub
-    400040: HIPPOGRIFF_ L Finger1
-    400042: HIPPOGRIFF_ L Finger11
-    400044: HIPPOGRIFF_ L Finger12
-    400046: HIPPOGRIFF_ L Finger1Nub
-    400048: HIPPOGRIFF_ L Finger2
-    400050: HIPPOGRIFF_ L Finger21
-    400052: HIPPOGRIFF_ L Finger22
-    400054: HIPPOGRIFF_ L Finger2Nub
-    400056: HIPPOGRIFF_ L Finger3
-    400058: HIPPOGRIFF_ L Finger31
-    400060: HIPPOGRIFF_ L Finger32
-    400062: HIPPOGRIFF_ L Finger3Nub
-    400064: HIPPOGRIFF_ L Foot
-    400066: HIPPOGRIFF_ L Forearm
-    400068: HIPPOGRIFF_ L Hand
-    400070: HIPPOGRIFF_ L HorseLink
-    400072: HIPPOGRIFF_ L Thigh
-    400074: HIPPOGRIFF_ L Toe0
-    400076: HIPPOGRIFF_ L Toe0Nub
-    400078: HIPPOGRIFF_ L UpperArm
-    400080: HIPPOGRIFF_ Neck
-    400082: HIPPOGRIFF_ Neck1
-    400084: HIPPOGRIFF_ Neck2
-    400086: HIPPOGRIFF_ Neck3
-    400088: HIPPOGRIFF_ Pelvis
-    400090: HIPPOGRIFF_ Queue de cheval 1
-    400092: HIPPOGRIFF_ Queue de cheval 1Nub
-    400094: HIPPOGRIFF_ R Calf
-    400096: HIPPOGRIFF_ R Clavicle
-    400098: HIPPOGRIFF_ R Finger0
-    400100: HIPPOGRIFF_ R Finger01
-    400102: HIPPOGRIFF_ R Finger02
-    400104: HIPPOGRIFF_ R Finger0Nub
-    400106: HIPPOGRIFF_ R Finger1
-    400108: HIPPOGRIFF_ R Finger11
-    400110: HIPPOGRIFF_ R Finger12
-    400112: HIPPOGRIFF_ R Finger1Nub
-    400114: HIPPOGRIFF_ R Finger2
-    400116: HIPPOGRIFF_ R Finger21
-    400118: HIPPOGRIFF_ R Finger22
-    400120: HIPPOGRIFF_ R Finger2Nub
-    400122: HIPPOGRIFF_ R Finger3
-    400124: HIPPOGRIFF_ R Finger31
-    400126: HIPPOGRIFF_ R Finger32
-    400128: HIPPOGRIFF_ R Finger3Nub
-    400130: HIPPOGRIFF_ R Foot
-    400132: HIPPOGRIFF_ R Forearm
-    400134: HIPPOGRIFF_ R Hand
-    400136: HIPPOGRIFF_ R HorseLink
-    400138: HIPPOGRIFF_ R Thigh
-    400140: HIPPOGRIFF_ R Toe0
-    400142: HIPPOGRIFF_ R Toe0Nub
-    400144: HIPPOGRIFF_ R UpperArm
-    400146: HIPPOGRIFF_ Spine
-    400148: HIPPOGRIFF_ Spine1
-    400150: HIPPOGRIFF_ Tail
-    400152: HIPPOGRIFF_ Tail1
-    400154: HIPPOGRIFF_ Tail2
-    400156: HIPPOGRIFF_ Tail3
-    400158: HIPPOGRIFF_ Tail4
-    400160: HIPPOGRIFF_ TailNub
-    400162: HIPPOGRIFF_WING_L_1
-    400164: HIPPOGRIFF_WING_L_2
-    400166: HIPPOGRIFF_WING_L_3
-    400168: HIPPOGRIFF_WING_L_nub
-    400170: HIPPOGRIFF_WING_R_1
-    400172: HIPPOGRIFF_WING_R_2
-    400174: HIPPOGRIFF_WING_R_3
-    400176: HIPPOGRIFF_WING_R_nub
-    2300000: Cercle002
-    2300002: Cercle003
-    3300000: Cercle002
-    3300002: Cercle003
-    4300000: HIPPOGRIFF
-    4300002: Cercle003
-    4300004: Cercle002
-    7400000: Take 001
-    9500000: //RootNode
-    11100000: //RootNode
-    13700000: HIPPOGRIFF
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Cercle002
+  - first:
+      1: 100002
+    second: Cercle003
+  - first:
+      1: 100004
+    second: Cha__ne CI001
+  - first:
+      1: 100006
+    second: Cha__ne CI002
+  - first:
+      1: 100008
+    second: Factice001
+  - first:
+      1: 100010
+    second: Factice002
+  - first:
+      1: 100012
+    second: Factice003
+  - first:
+      1: 100014
+    second: Factice004
+  - first:
+      1: 100016
+    second: HIPPOGRIFF
+  - first:
+      1: 100018
+    second: //RootNode
+  - first:
+      1: 100020
+    second: HIPPOGRIFF_
+  - first:
+      1: 100022
+    second: HIPPOGRIFF_ Footsteps
+  - first:
+      1: 100024
+    second: HIPPOGRIFF_ Head
+  - first:
+      1: 100026
+    second: HIPPOGRIFF_ HeadNub
+  - first:
+      1: 100028
+    second: HIPPOGRIFF_ L Calf
+  - first:
+      1: 100030
+    second: HIPPOGRIFF_ L Clavicle
+  - first:
+      1: 100032
+    second: HIPPOGRIFF_ L Finger0
+  - first:
+      1: 100034
+    second: HIPPOGRIFF_ L Finger01
+  - first:
+      1: 100036
+    second: HIPPOGRIFF_ L Finger02
+  - first:
+      1: 100038
+    second: HIPPOGRIFF_ L Finger0Nub
+  - first:
+      1: 100040
+    second: HIPPOGRIFF_ L Finger1
+  - first:
+      1: 100042
+    second: HIPPOGRIFF_ L Finger11
+  - first:
+      1: 100044
+    second: HIPPOGRIFF_ L Finger12
+  - first:
+      1: 100046
+    second: HIPPOGRIFF_ L Finger1Nub
+  - first:
+      1: 100048
+    second: HIPPOGRIFF_ L Finger2
+  - first:
+      1: 100050
+    second: HIPPOGRIFF_ L Finger21
+  - first:
+      1: 100052
+    second: HIPPOGRIFF_ L Finger22
+  - first:
+      1: 100054
+    second: HIPPOGRIFF_ L Finger2Nub
+  - first:
+      1: 100056
+    second: HIPPOGRIFF_ L Finger3
+  - first:
+      1: 100058
+    second: HIPPOGRIFF_ L Finger31
+  - first:
+      1: 100060
+    second: HIPPOGRIFF_ L Finger32
+  - first:
+      1: 100062
+    second: HIPPOGRIFF_ L Finger3Nub
+  - first:
+      1: 100064
+    second: HIPPOGRIFF_ L Foot
+  - first:
+      1: 100066
+    second: HIPPOGRIFF_ L Forearm
+  - first:
+      1: 100068
+    second: HIPPOGRIFF_ L Hand
+  - first:
+      1: 100070
+    second: HIPPOGRIFF_ L HorseLink
+  - first:
+      1: 100072
+    second: HIPPOGRIFF_ L Thigh
+  - first:
+      1: 100074
+    second: HIPPOGRIFF_ L Toe0
+  - first:
+      1: 100076
+    second: HIPPOGRIFF_ L Toe0Nub
+  - first:
+      1: 100078
+    second: HIPPOGRIFF_ L UpperArm
+  - first:
+      1: 100080
+    second: HIPPOGRIFF_ Neck
+  - first:
+      1: 100082
+    second: HIPPOGRIFF_ Neck1
+  - first:
+      1: 100084
+    second: HIPPOGRIFF_ Neck2
+  - first:
+      1: 100086
+    second: HIPPOGRIFF_ Neck3
+  - first:
+      1: 100088
+    second: HIPPOGRIFF_ Pelvis
+  - first:
+      1: 100090
+    second: HIPPOGRIFF_ Queue de cheval 1
+  - first:
+      1: 100092
+    second: HIPPOGRIFF_ Queue de cheval 1Nub
+  - first:
+      1: 100094
+    second: HIPPOGRIFF_ R Calf
+  - first:
+      1: 100096
+    second: HIPPOGRIFF_ R Clavicle
+  - first:
+      1: 100098
+    second: HIPPOGRIFF_ R Finger0
+  - first:
+      1: 100100
+    second: HIPPOGRIFF_ R Finger01
+  - first:
+      1: 100102
+    second: HIPPOGRIFF_ R Finger02
+  - first:
+      1: 100104
+    second: HIPPOGRIFF_ R Finger0Nub
+  - first:
+      1: 100106
+    second: HIPPOGRIFF_ R Finger1
+  - first:
+      1: 100108
+    second: HIPPOGRIFF_ R Finger11
+  - first:
+      1: 100110
+    second: HIPPOGRIFF_ R Finger12
+  - first:
+      1: 100112
+    second: HIPPOGRIFF_ R Finger1Nub
+  - first:
+      1: 100114
+    second: HIPPOGRIFF_ R Finger2
+  - first:
+      1: 100116
+    second: HIPPOGRIFF_ R Finger21
+  - first:
+      1: 100118
+    second: HIPPOGRIFF_ R Finger22
+  - first:
+      1: 100120
+    second: HIPPOGRIFF_ R Finger2Nub
+  - first:
+      1: 100122
+    second: HIPPOGRIFF_ R Finger3
+  - first:
+      1: 100124
+    second: HIPPOGRIFF_ R Finger31
+  - first:
+      1: 100126
+    second: HIPPOGRIFF_ R Finger32
+  - first:
+      1: 100128
+    second: HIPPOGRIFF_ R Finger3Nub
+  - first:
+      1: 100130
+    second: HIPPOGRIFF_ R Foot
+  - first:
+      1: 100132
+    second: HIPPOGRIFF_ R Forearm
+  - first:
+      1: 100134
+    second: HIPPOGRIFF_ R Hand
+  - first:
+      1: 100136
+    second: HIPPOGRIFF_ R HorseLink
+  - first:
+      1: 100138
+    second: HIPPOGRIFF_ R Thigh
+  - first:
+      1: 100140
+    second: HIPPOGRIFF_ R Toe0
+  - first:
+      1: 100142
+    second: HIPPOGRIFF_ R Toe0Nub
+  - first:
+      1: 100144
+    second: HIPPOGRIFF_ R UpperArm
+  - first:
+      1: 100146
+    second: HIPPOGRIFF_ Spine
+  - first:
+      1: 100148
+    second: HIPPOGRIFF_ Spine1
+  - first:
+      1: 100150
+    second: HIPPOGRIFF_ Tail
+  - first:
+      1: 100152
+    second: HIPPOGRIFF_ Tail1
+  - first:
+      1: 100154
+    second: HIPPOGRIFF_ Tail2
+  - first:
+      1: 100156
+    second: HIPPOGRIFF_ Tail3
+  - first:
+      1: 100158
+    second: HIPPOGRIFF_ Tail4
+  - first:
+      1: 100160
+    second: HIPPOGRIFF_ TailNub
+  - first:
+      1: 100162
+    second: HIPPOGRIFF_WING_L_1
+  - first:
+      1: 100164
+    second: HIPPOGRIFF_WING_L_2
+  - first:
+      1: 100166
+    second: HIPPOGRIFF_WING_L_3
+  - first:
+      1: 100168
+    second: HIPPOGRIFF_WING_L_nub
+  - first:
+      1: 100170
+    second: HIPPOGRIFF_WING_R_1
+  - first:
+      1: 100172
+    second: HIPPOGRIFF_WING_R_2
+  - first:
+      1: 100174
+    second: HIPPOGRIFF_WING_R_3
+  - first:
+      1: 100176
+    second: HIPPOGRIFF_WING_R_nub
+  - first:
+      4: 400000
+    second: Cercle002
+  - first:
+      4: 400002
+    second: Cercle003
+  - first:
+      4: 400004
+    second: Cha__ne CI001
+  - first:
+      4: 400006
+    second: Cha__ne CI002
+  - first:
+      4: 400008
+    second: Factice001
+  - first:
+      4: 400010
+    second: Factice002
+  - first:
+      4: 400012
+    second: Factice003
+  - first:
+      4: 400014
+    second: Factice004
+  - first:
+      4: 400016
+    second: HIPPOGRIFF
+  - first:
+      4: 400018
+    second: //RootNode
+  - first:
+      4: 400020
+    second: HIPPOGRIFF_
+  - first:
+      4: 400022
+    second: HIPPOGRIFF_ Footsteps
+  - first:
+      4: 400024
+    second: HIPPOGRIFF_ Head
+  - first:
+      4: 400026
+    second: HIPPOGRIFF_ HeadNub
+  - first:
+      4: 400028
+    second: HIPPOGRIFF_ L Calf
+  - first:
+      4: 400030
+    second: HIPPOGRIFF_ L Clavicle
+  - first:
+      4: 400032
+    second: HIPPOGRIFF_ L Finger0
+  - first:
+      4: 400034
+    second: HIPPOGRIFF_ L Finger01
+  - first:
+      4: 400036
+    second: HIPPOGRIFF_ L Finger02
+  - first:
+      4: 400038
+    second: HIPPOGRIFF_ L Finger0Nub
+  - first:
+      4: 400040
+    second: HIPPOGRIFF_ L Finger1
+  - first:
+      4: 400042
+    second: HIPPOGRIFF_ L Finger11
+  - first:
+      4: 400044
+    second: HIPPOGRIFF_ L Finger12
+  - first:
+      4: 400046
+    second: HIPPOGRIFF_ L Finger1Nub
+  - first:
+      4: 400048
+    second: HIPPOGRIFF_ L Finger2
+  - first:
+      4: 400050
+    second: HIPPOGRIFF_ L Finger21
+  - first:
+      4: 400052
+    second: HIPPOGRIFF_ L Finger22
+  - first:
+      4: 400054
+    second: HIPPOGRIFF_ L Finger2Nub
+  - first:
+      4: 400056
+    second: HIPPOGRIFF_ L Finger3
+  - first:
+      4: 400058
+    second: HIPPOGRIFF_ L Finger31
+  - first:
+      4: 400060
+    second: HIPPOGRIFF_ L Finger32
+  - first:
+      4: 400062
+    second: HIPPOGRIFF_ L Finger3Nub
+  - first:
+      4: 400064
+    second: HIPPOGRIFF_ L Foot
+  - first:
+      4: 400066
+    second: HIPPOGRIFF_ L Forearm
+  - first:
+      4: 400068
+    second: HIPPOGRIFF_ L Hand
+  - first:
+      4: 400070
+    second: HIPPOGRIFF_ L HorseLink
+  - first:
+      4: 400072
+    second: HIPPOGRIFF_ L Thigh
+  - first:
+      4: 400074
+    second: HIPPOGRIFF_ L Toe0
+  - first:
+      4: 400076
+    second: HIPPOGRIFF_ L Toe0Nub
+  - first:
+      4: 400078
+    second: HIPPOGRIFF_ L UpperArm
+  - first:
+      4: 400080
+    second: HIPPOGRIFF_ Neck
+  - first:
+      4: 400082
+    second: HIPPOGRIFF_ Neck1
+  - first:
+      4: 400084
+    second: HIPPOGRIFF_ Neck2
+  - first:
+      4: 400086
+    second: HIPPOGRIFF_ Neck3
+  - first:
+      4: 400088
+    second: HIPPOGRIFF_ Pelvis
+  - first:
+      4: 400090
+    second: HIPPOGRIFF_ Queue de cheval 1
+  - first:
+      4: 400092
+    second: HIPPOGRIFF_ Queue de cheval 1Nub
+  - first:
+      4: 400094
+    second: HIPPOGRIFF_ R Calf
+  - first:
+      4: 400096
+    second: HIPPOGRIFF_ R Clavicle
+  - first:
+      4: 400098
+    second: HIPPOGRIFF_ R Finger0
+  - first:
+      4: 400100
+    second: HIPPOGRIFF_ R Finger01
+  - first:
+      4: 400102
+    second: HIPPOGRIFF_ R Finger02
+  - first:
+      4: 400104
+    second: HIPPOGRIFF_ R Finger0Nub
+  - first:
+      4: 400106
+    second: HIPPOGRIFF_ R Finger1
+  - first:
+      4: 400108
+    second: HIPPOGRIFF_ R Finger11
+  - first:
+      4: 400110
+    second: HIPPOGRIFF_ R Finger12
+  - first:
+      4: 400112
+    second: HIPPOGRIFF_ R Finger1Nub
+  - first:
+      4: 400114
+    second: HIPPOGRIFF_ R Finger2
+  - first:
+      4: 400116
+    second: HIPPOGRIFF_ R Finger21
+  - first:
+      4: 400118
+    second: HIPPOGRIFF_ R Finger22
+  - first:
+      4: 400120
+    second: HIPPOGRIFF_ R Finger2Nub
+  - first:
+      4: 400122
+    second: HIPPOGRIFF_ R Finger3
+  - first:
+      4: 400124
+    second: HIPPOGRIFF_ R Finger31
+  - first:
+      4: 400126
+    second: HIPPOGRIFF_ R Finger32
+  - first:
+      4: 400128
+    second: HIPPOGRIFF_ R Finger3Nub
+  - first:
+      4: 400130
+    second: HIPPOGRIFF_ R Foot
+  - first:
+      4: 400132
+    second: HIPPOGRIFF_ R Forearm
+  - first:
+      4: 400134
+    second: HIPPOGRIFF_ R Hand
+  - first:
+      4: 400136
+    second: HIPPOGRIFF_ R HorseLink
+  - first:
+      4: 400138
+    second: HIPPOGRIFF_ R Thigh
+  - first:
+      4: 400140
+    second: HIPPOGRIFF_ R Toe0
+  - first:
+      4: 400142
+    second: HIPPOGRIFF_ R Toe0Nub
+  - first:
+      4: 400144
+    second: HIPPOGRIFF_ R UpperArm
+  - first:
+      4: 400146
+    second: HIPPOGRIFF_ Spine
+  - first:
+      4: 400148
+    second: HIPPOGRIFF_ Spine1
+  - first:
+      4: 400150
+    second: HIPPOGRIFF_ Tail
+  - first:
+      4: 400152
+    second: HIPPOGRIFF_ Tail1
+  - first:
+      4: 400154
+    second: HIPPOGRIFF_ Tail2
+  - first:
+      4: 400156
+    second: HIPPOGRIFF_ Tail3
+  - first:
+      4: 400158
+    second: HIPPOGRIFF_ Tail4
+  - first:
+      4: 400160
+    second: HIPPOGRIFF_ TailNub
+  - first:
+      4: 400162
+    second: HIPPOGRIFF_WING_L_1
+  - first:
+      4: 400164
+    second: HIPPOGRIFF_WING_L_2
+  - first:
+      4: 400166
+    second: HIPPOGRIFF_WING_L_3
+  - first:
+      4: 400168
+    second: HIPPOGRIFF_WING_L_nub
+  - first:
+      4: 400170
+    second: HIPPOGRIFF_WING_R_1
+  - first:
+      4: 400172
+    second: HIPPOGRIFF_WING_R_2
+  - first:
+      4: 400174
+    second: HIPPOGRIFF_WING_R_3
+  - first:
+      4: 400176
+    second: HIPPOGRIFF_WING_R_nub
+  - first:
+      23: 2300000
+    second: Cercle002
+  - first:
+      23: 2300002
+    second: Cercle003
+  - first:
+      33: 3300000
+    second: Cercle002
+  - first:
+      33: 3300002
+    second: Cercle003
+  - first:
+      43: 4300000
+    second: HIPPOGRIFF
+  - first:
+      43: 4300002
+    second: Cercle003
+  - first:
+      43: 4300004
+    second: Cercle002
+  - first:
+      74: 7400000
+    second: inAirClawsAttack
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: HIPPOGRIFF
+  externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 0
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 2
     extraExposedTransformPaths: []
-    clipAnimations: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: inAirClawsAttack
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -232,25 +658,36 @@ ModelImporter:
     useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 1
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.01
     rootMotionBoneName: HIPPOGRIFF_
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e658b8f0a3cd4da499e6fc2e0db9f5f1,
     type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 2
   additionalBone: 1
   userData: 
   assetBundleName: 

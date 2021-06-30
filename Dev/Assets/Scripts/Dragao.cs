@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class Dragao : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class Dragao : MonoBehaviour
 
     public GameObject antigoDragaoTxt;
 
+    public Slider sliderDrag;
+
 
 
     // Start is called before the first frame update
@@ -41,6 +44,8 @@ public class Dragao : MonoBehaviour
         localDaTreta = false;
         vivo = true;
         noPit = false;
+        vida = 200;
+        sliderDrag.value = vida;
 
         //referencia = transform.Find("Referencia").GetComponent<Transform>();
     }
@@ -106,12 +111,14 @@ public class Dragao : MonoBehaviour
         if (vida < 1)
         {
             vivo = false;
-
+            antigoDragaoTxt.SetActive(false);
+            Destroy(this);
 
         }
 
         if (noPit)
         {
+            antigoDragaoTxt.gameObject.SetActive(true);
             Gira();
             CospeFogo();
         }
@@ -121,18 +128,20 @@ public class Dragao : MonoBehaviour
             timer = 0;
         }
 
+        sliderDrag.value = vida;
+
     }
 
     private void CospeFogo()
     {
         timer += Time.deltaTime;
 
-        if (timer > 15)
+        if (timer > 11)
         {
             instanciaFogoPrefabe = Instantiate(fogoPrefabe, this.transform);
-            Destroy(instanciaFogoPrefabe, 17.5f);
+            Destroy(instanciaFogoPrefabe, 10.5f);
             animator.SetBool("CospeFogo", true);
-            timer = 0;
+            timer = -10;
         }
     }
 
@@ -200,10 +209,10 @@ public class Dragao : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        {
+        
             vida -= 3;
            
             Debug.Log("script dragao: Entrou!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        }
+        
     }
 }

@@ -17,7 +17,7 @@ public class Colossus : MonoBehaviour
     public GameObject arena;
     public GameObject destinoGenerico;
     public GameObject hudBoss;
-    //public GameObject hudExtensao;
+    public GameObject final;
 
     public Animator animator;
 
@@ -56,6 +56,7 @@ public class Colossus : MonoBehaviour
 
         if (sliderVida.value < 1)
         {
+            final.gameObject.SetActive(true);
             hudBoss.SetActive(false);
             //hudExtensao.SetActive(false);
             this.gameObject.SetActive(false);
